@@ -1,0 +1,217 @@
+#news {
+  position: relative;
+  padding-top: 100px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+#rumor {
+  padding-top: 100px;
+}
+#news .timeLine {
+  position: absolute;
+  height: calc(100% - 220px);
+  width: 45px;
+  top: 205px;
+  left: 0;
+  border-right: 1px solid #dddddd;
+}
+#news .singleNew {
+  font-size: 28px;
+  line-height: 45px;
+  padding: 5px 20px 10px 20px;
+  margin-left: 50px;
+  width: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#news .singleNew .timeIcon {
+  position: absolute;
+  left: -13px;
+  top: 21px;
+  background: #005dff;
+  width: 16px;
+  height: 16px;
+  border-radius: 30px;
+}
+#news .singleNew .times {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #666;
+}
+#news .singleNew .times .newest {
+  background: #f43b3b;
+  color: #fff;
+  margin-left: 30px;
+}
+
+#news .singleNew .desc {
+  padding: 20px 20px;
+  color: #737373;
+}
+
+.news-box {
+  padding-bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+#news .singleNew .title {
+  color: #222222;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 20px 20px 0 20px;
+  line-height: 1.5;
+}
+
+#news .singleNew .source {
+  padding: 0px 20px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 36px;
+  height: 100px;
+  line-height: 100px;
+  background: url(../img/smart.png) 40px center no-repeat;
+  padding: 0 70px;
+  color: #005dff;
+  position: relative;
+}
+
+.sectionTitle .more {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  font-size: 28px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.cssmarquee {
+  overflow: hidden;
+  position: relative;
+  width: 678px;
+  top: 80px;
+  background: #fff;
+  margin: 0 30px;
+  height: 45px;
+}
+.cssmarquee h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform: translateX(100%);
+  animation: cssmarquee 20s linear infinite;
+}
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.foot {
+  background: white;
+  width: 100%;
+  margin-top: 40px;
+}
+.foot_title_bg {
+  background: #f8f8f8;
+  width: 670px;
+  height: 280px;
+  padding-top: 40px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.foot_bg_title_p {
+  color: #222222;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.foot_bg_title_pcont {
+  color: #737373;
+  font-size: 24px;
+  width: 100%;
+  padding: 20px 30px 0px 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.p-hospital {
+  color: #222222;
+  font-size: 28px;
+  width: 100%;
+  margin: 50px 0px 0px 40px;
+  font-weight: 600;
+}
+.p-fanghu {
+  color: #222222;
+  font-size: 36px;
+  width: 100%;
+  margin: 60px 0px 0px 0px;
+  text-align: center;
+  font-weight: 600;
+}
+.img-hospital {
+  width: 670px;
+  height: 998px;
+  margin: 40px 40px 0px 40px;
+  pointer-events: none;
+}
+.table-hospital {
+  width: 670px;
+  margin: 40px auto 0px;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.td-css-one {
+  text-align: center;
+  height: 68px;
+  width: 24%;
+  vertical-align: middle;
+  color: #222222;
+  font-size: 24px;
+  border-left: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.td-css-black {
+  width: 52%;
+  text-align: center;
+  height: 68px;
+  vertical-align: middle;
+  color: #222222;
+  font-size: 24px;
+  border-left: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.td-css {
+  width: 52%;
+  text-align: center;
+  height: 68px;
+  vertical-align: middle;
+  color: #005dff;
+  font-size: 24px;
+  border-left: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.td-a {
+  text-decoration: none;
+  color: #005dff;
+}
+.font-600 {
+  font-weight: 600;
+}
+
+#prevent {
+  padding-top: 70px;
+}
