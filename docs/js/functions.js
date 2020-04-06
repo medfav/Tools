@@ -38,7 +38,7 @@ $(window).resize(function() {
 })(jQuery);
 
 function timeElapse(date){
-	var current = new Date(2020,04,06,09,56,00);
+	var current = new Date(2020,03,06,09,56,00);
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
 	var days = Math.floor(seconds / (3600 * 24));
 	seconds = seconds % (3600 * 24);
