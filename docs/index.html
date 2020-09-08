@@ -23,7 +23,7 @@
           })();
         </script>
     </head>
-    <body onload="javascript:$('audio').trigger('play')">
+    <body>
         <div id="main">
             <div id="error">亲，您使用的浏览器无法支持即将显示的内容，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器哟~</div>
             <div id="wrap">
@@ -53,7 +53,7 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <audio src="https://medfav.imfast.io/love.mp3" autoplay="autoplay"></audio>
+            <audio src="https://medfav.imfast.io/love.mp3"></audio>
         </div>
     
     <script>
@@ -124,6 +124,7 @@
                 canvas.unbind("click");
                 canvas.unbind("mousemove");
                 canvas.removeClass('hand');
+                $('audio').trigger("play");//播放背景音乐
             }
         }).mousemove(function(e){
             var offset = canvas.offset(), x, y;
