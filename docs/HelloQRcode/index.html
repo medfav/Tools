@@ -148,10 +148,10 @@
             <el-main>
                 <el-image src="https://medfav.imfast.io/HelloQRcode/logo.png" ></el-image>
                 <el-form-item id="first" prop="code">
-                    <el-input placeholder="请输入自行车编号" v-model="ruleForm.code" maxlength="10" show-word-limit clearable focus></el-input>
+                    <el-input placeholder="请输入自行车编号" v-model="ruleForm.code" maxlength="10" @input="input()" show-word-limit clearable focus></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary" @click="submitForm('ruleForm')" round>生成二维码</el-button>
+                    <el-button type="primary" @click="submitForm('ruleForm')" round :disabled="ruleForm.disabled">生成二维码</el-button>
                 </el-form-item>
             </el-main>
             <el-main id="qr">
@@ -173,6 +173,7 @@
                         code: '',
                         qrtext:'./wechat_qrcode.png',
                         text:'微信扫码关注公众号',
+                        disabled:false
                     },
                     rules: {
                         code: [
@@ -187,6 +188,11 @@
                 submitForm(formName) {
                         this.$refs[formName].validate((valid) => {
                         if (valid) {
+                            this.$message({message:'正在生成二维码，请稍等...',showClose: true});
+                            this.ruleForm.disabled=true;
+                            setTimeout(() => {
+                                this.ruleForm.disabled = false;
+                            }, 2000);
                             this.ruleForm.qrtext="http://c3x.me/?n="+this.ruleForm.code;
                             this.ruleForm.qrtext = 'https://api.isoyu.com/qr/?m=1&e=H&p=12&url='+this.ruleForm.qrtext;
                             this.ruleForm.text='手机长按图片识别';
@@ -202,6 +208,9 @@
                         confirmButtonText: '知道了',
                         showClose: false
                     });
+                },
+                input(){
+                    this.ruleForm.disabled = false;
                 }
             }
             
