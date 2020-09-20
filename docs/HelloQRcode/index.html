@@ -151,7 +151,7 @@
                     <el-input placeholder="请输入自行车编号" v-model="ruleForm.code" maxlength="10" @input="input()" show-word-limit clearable focus></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary" @click="submitForm('ruleForm')" round :disabled="ruleForm.disabled">生成二维码</el-button>
+                    <el-button type="primary" @click="submitForm('ruleForm')" disabled round :disabled="ruleForm.disabled">生成二维码</el-button>
                 </el-form-item>
             </el-main>
             <el-main id="qr">
@@ -192,7 +192,7 @@
                             this.ruleForm.disabled=true;
                             setTimeout(() => {
                                 this.ruleForm.disabled = false;
-                            }, 2000);
+                            }, 3500);
                             this.ruleForm.qrtext="http://c3x.me/?n="+this.ruleForm.code;
                             this.ruleForm.qrtext = 'https://api.isoyu.com/qr/?m=1&e=H&p=12&url='+this.ruleForm.qrtext;
                             this.ruleForm.text='手机长按图片识别';
