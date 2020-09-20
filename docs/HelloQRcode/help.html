@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>生成二维码</title>
+        <script src="./vue.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js"></script>
+        <style>
+            html{
+                height: 100%;
+            }
+            body,.el-container{
+                margin: 0;
+                padding: 0;
+            }
+            .el-container{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 400px;
+                min-width: 300px;
+            }
+            .el-container h2{
+                text-align: center;
+                padding: 0;
+                margin: 15px 0;
+            }.el-container h4{
+                padding: 0;
+                margin: 2px 0;
+            }
+            .el-container div{
+                padding: 0em ;
+                /* background-color: tomato; */
+            }
+            .el-container p{
+                font-size: 15px;
+                margin: 5px 0;
+                text-indent: 2em;
+                /* background-color: teal; */
+                text-align: justify;
+                text-align-last: left;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <el-container id="main">
+            <h2>Hello单车二维码说明</h2>
+            <div>
+                <p>本工具是用来解决Hello单车二维码被恶意破坏导致不能开锁的问题。</p>
+                <h4>使用方法：</h4>
+                <p>通过微信（支付宝）扫描二维码，打开本页面，在文本框里输入10位数的编号，点击“生成二维码”按钮，然后长按生成的二维码识别二维码，就可以解锁单车了。</p>
+                <h4>获取编码的方法：</h4>
+                <p>一、在Hello单车的二维码旁边有10位数编号，就是单车的编号。</p>
+                <p>二、如果二维码附近的编号也看不见了，打开手机蓝牙，在蓝牙的其他设备列表里可以看见形如“HB+10位数”的设备，10位数就是单车的编号。</p>
+            </div>
+        </el-container>
+        <script>
+            new Vue({
+                el: '#main'
+            });
+        </script>
+    </body>
+</html>
