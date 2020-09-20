@@ -16,7 +16,7 @@
           s.parentNode.insertBefore(hm, s);
         })();
     </script>
- <style>
+    <style>
         body,.el-header,.el-footer,.el-container,#qr{
             margin: 0;
             padding: 0;
@@ -41,6 +41,10 @@
             height: 40px;
             line-height: 40px;
             box-shadow: 0px 3px 4px #888;
+        }
+        .el-header i{
+            margin-left: 7px;
+            cursor: pointer;
         }
         .el-footer{
             position: fixed;
@@ -110,6 +114,25 @@
             display: block;
             margin: 0 auto;
         }
+        iframe{
+            width: 95%;
+            height: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        .el-message-box{
+            margin-top: 1px;
+            height: 99%;
+            width: 99%;
+        }
+        .el-message-box__content{
+            height: 80%;
+            margin: 0;
+            padding: 0px 10px;
+        }
+        .el-message-box__container,.el-message-box__message,.el-message-box__content p{
+            height: 100%;
+        }
     </style>
 
 </head>
@@ -118,7 +141,7 @@
     <el-container id="main">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
             <el-header>
-                <div>哈罗单车二维码</div>
+                <div>哈罗单车二维码<i class="el-icon-question" @click="open()"></i></div>
             </el-header>
             <el-main>
                 <el-image src="https://medfav.imfast.io/HelloQRcode/logo.png" ></el-image>
@@ -146,7 +169,7 @@
                 return {
                     ruleForm:{
                         code: '',
-                        qrtext:'https://medfav.imfast.io/HelloQRcode/wechat_qrcode.png',
+                        qrtext:'./wechat_qrcode.png',
                         text:'微信扫码关注公众号',
                     },
                     rules: {
@@ -168,6 +191,14 @@
                         } else {
                             return false;
                         }
+                    });
+                },
+                open() {
+                    this.$alert('<iframe src="./help.html" frameborder="0"></iframe>', {
+                        dangerouslyUseHTMLString: true,
+                        lockScroll:true,
+                        confirmButtonText: '知道了',
+                        showClose: false
                     });
                 }
             }
