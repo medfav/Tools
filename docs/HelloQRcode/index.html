@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成二维码</title>
+    <script src="./vue.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <style>
+        body,.el-header,.el-container,#qr{
+            margin: 0;
+            padding: 0;
+        }
+        .el-container{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            min-width: 300px;
+        }
+        .el-header{
+            height: 50px !important;
+        }
+        .el-header div{
+            padding: 0;
+            background-color: #409eff;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+        }
+        .el-footer{
+            position:fixed;
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #999;
+            font-size: small;
+            left: 0px;
+            bottom: 0px;
+            line-height: 60px;
+        }
+        .el-main{
+            display: block;
+            padding-top: 0px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        .el-main#qr{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .el-form-item {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .el-form-item#first {
+            margin-top: 10px;
+        }
+        .el-button{
+            margin: 20px 0 0 0;
+            width: 100%;
+            text-align: center;
+        }
+        #qrcode {
+            margin-top: 10px;
+            text-align: center;
+            display: none;
+        }
+        #qrimg{
+            margin-top: 0px;
+            width: 70%;
+            min-width: 180px;
+        }
+        .el-link{
+            text-align: center;
+            display: block;
+            width: 130px;
+            margin: 10px auto 0 auto;
+        }
+        .el-image {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <el-container id="main">
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
+            <el-header>
+                <div>哈罗单车二维码</div>
+            </el-header>
+            <el-main>
+                <el-image src="./logo.png" ></el-image>
+                <el-form-item id="first" prop="code">
+                    <el-input placeholder="请输入自行车编号" v-model="ruleForm.code" maxlength="10" show-word-limit clearable focus></el-input>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" @click="submitForm('ruleForm')" round>生成二维码</el-button>
+                </el-form-item>
+            </el-main>
+            <el-main id="qr">
+                <div id="qrcode"></div>
+                <img id="qrimg" :src="ruleForm.qrtext" alt="" srcset="">
+                <el-link type="primary" v-if="ruleForm.qrtext!=''" underline="false">{{ruleForm.text}}</el-link>
+            </el-main>
+            <el-footer>All Content &copy; 蓝天之约 2020 </el-footer>   
+        </el-form>
+    </el-container>
+    <script>
+        new Vue({
+            el: '#main',
+            data: function () {
+                return {
+                    ruleForm:{
+                        code: '',
+                        qrtext:'./wechat_qrcode.png',
+                        text:'微信扫码关注公众号',
+                    },
+                    rules: {
+                        code: [
+                            { required: true, message: '请输入自行车编号', trigger: 'blur' },
+                            { pattern:/^\d{10}$/, message: '编号必须为 10 位数字', trigger: 'blur' }
+                        ]
+                    }
+                }
+                
+            },
+            methods: {
+                submitForm(formName) {
+                        this.$refs[formName].validate((valid) => {
+                        if (valid) {
+                            this.ruleForm.qrtext="http://c3x.me/?n="+this.ruleForm.code;
+                            this.ruleForm.qrtext = 'https://api.isoyu.com/qr/?m=1&e=H&p=12&url='+this.ruleForm.qrtext;
+                            this.ruleForm.text='手机长按图片识别';
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }
+            
+        });
+        
+    </script>
+</body>
+
+</html>
