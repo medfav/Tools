@@ -12,7 +12,7 @@
  */
 
 importScripts("/nice/workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/workbox-v3.6.3"});
+workbox.setConfig({modulePathPrefix: "/nice/workbox-v3.6.3"});
 
 importScripts(
   "/nice/precache-manifest.e8d41e4385e5bfb9d7af59aca131b30b.js"
