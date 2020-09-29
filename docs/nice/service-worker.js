@@ -11,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/workbox-v3.6.3/workbox-sw.js");
+importScripts("/nice/workbox-v3.6.3/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/workbox-v3.6.3"});
 
 importScripts(
-  "/precache-manifest.e8d41e4385e5bfb9d7af59aca131b30b.js"
+  "/nice/precache-manifest.e8d41e4385e5bfb9d7af59aca131b30b.js"
 );
 
 workbox.skipWaiting();
@@ -30,12 +30,12 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/index.html", {
+workbox.routing.registerNavigationRoute("./index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
 
-workbox.routing.registerRoute(/.*\.js/, workbox.strategies.networkFirst(), 'GET');
-workbox.routing.registerRoute(/.*\.css/, workbox.strategies.staleWhileRevalidate({ plugins: [{ cacheableResponse: { statuses: [ 0, 200 ] } }] }), 'GET');
-workbox.routing.registerRoute(/.*\.(png|jpg|jpeg|svg|gif)/, workbox.strategies.cacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({"maxAgeSeconds":86400,"maxEntries":50,"purgeOnQuotaError":false})] }), 'GET');
-workbox.routing.registerRoute(/.*\.html/, workbox.strategies.networkFirst(), 'GET');
+workbox.routing.registerRoute(\./.*\.js/, workbox.strategies.networkFirst(), 'GET');
+workbox.routing.registerRoute(\./.*\.css/, workbox.strategies.staleWhileRevalidate({ plugins: [{ cacheableResponse: { statuses: [ 0, 200 ] } }] }), 'GET');
+workbox.routing.registerRoute(\./.*\.(png|jpg|jpeg|svg|gif)/, workbox.strategies.cacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({"maxAgeSeconds":86400,"maxEntries":50,"purgeOnQuotaError":false})] }), 'GET');
+workbox.routing.registerRoute(\./.*\.html/, workbox.strategies.networkFirst(), 'GET');
