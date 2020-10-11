@@ -19,9 +19,7 @@
             </el-header>
             <el-main>
                 <div>
-                    <iframe id="iframe" :src="playUrl" frameborder="0" allowfullscreen="true" >
-                        请选择服务，并输入视频所在页面连接
-                    </iframe>
+                    <iframe id="iframe" :src="playUrl" frameborder="0" allowfullscreen="true" ></iframe>
                 </div>
                 <div id="inputUrl">
                     <el-input placeholder="请输入内容" autofocus clearable v-model="input" @input="iputChange" class="input-with-select">
@@ -33,6 +31,7 @@
                 </div>
             </el-main>
             <el-footer>
+                <p class="mz">免责声明：视频服务仅支持学习交流，勿用非法用途！本站不承担任何责任！</p>
                 <div>All Content &copy; 蓝天之约 2020.10</div>
             </el-footer>
         </el-container>
