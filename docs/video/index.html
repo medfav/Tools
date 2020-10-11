@@ -69,6 +69,9 @@
                     url:url,
                     success:function(res){
                         console.log(res)
+                        if ((typeof res)=="string") {
+                            res = $.parseJSON(res);
+                        }
                         _this.urlList = res;
                         _this.select = res[0].value;
                         _this.input = getQueryVariable(location.href);
