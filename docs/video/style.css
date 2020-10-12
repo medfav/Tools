@@ -3,6 +3,7 @@ html,body{
     padding: 0;
     background-color: #d4d4d4;
     height: 100%;
+    min-height: 650px;
     min-width: 1000px;
 }
 div.pageDiv,.el-container{
