@@ -2,10 +2,11 @@ html,body{
     margin: 0;
     padding: 0;
     background-color: #d4d4d4;
-}
-body{
+    height: 100%;
     min-width: 1000px;
-    max-width: 1600px;
+}
+div.pageDiv,.el-container{
+    height: 100%;
 }
 header.el-header,footer.el-footer{
     text-align: center;
@@ -14,13 +15,21 @@ header.el-header,footer.el-footer{
     line-height: 35px;
     width: 80%;
 }
+footer.el-footer{
+    height: 70px !important;
+    line-height: 35px;
+}
 header.el-header div{
     background-color: #409EFF;
     color: #fff;
     width: 100%;
 }
-
-footer.el-footer div{
+footer.el-footer p{
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+footer.el-footer p.copyright{
     font-size: 13px;
     color: #999;
     width: 100%;
@@ -28,9 +37,10 @@ footer.el-footer div{
 iframe{
     display: block;
     width: 100%;
-    height: 478px;
+    height: 100%;
+    /* height: 478px; */
     background-color: black;
-    margin: 1px 0 10px 0;
+    margin: 1px 0 0 0;
 }
 html::-webkit-scrollbar{
     display: none;
@@ -46,8 +56,10 @@ main.el-main{
     width: 80%;
     text-align: center;
 }
-main.el-main div {
+div.playerDiv {
     overflow: hidden;
+    height: 90%;
+    margin-bottom: 10px;;
 }
 #play{
     margin: 0;
@@ -63,6 +75,9 @@ main.el-main div {
 i.el-select__caret,.input-with-select .el-input-group__prepend,.input-with-select .el-input-group__append {
     background-color: #ffffff;
     color: #409EFF;
+}
+i.el-icon-arrow-up{
+    background-color: #ffffff00;
 }
 p.mz{
     margin: 0;
