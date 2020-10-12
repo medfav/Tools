@@ -12,13 +12,13 @@
     <script src="https://medfav.imfast.io/video/jquery.min.js"></script>
 </head>
 <body>
-    <div>
+    <div class="pageDiv">
         <el-container id="page">
             <el-header>
                 <div>VIP视频解析</div>
             </el-header>
             <el-main>
-                <div>
+                <div class="playerDiv">
                     <iframe id="iframe" :src="playUrl" frameborder="0" allowfullscreen="true" ></iframe>
                 </div>
                 <div id="inputUrl">
@@ -32,7 +32,7 @@
             </el-main>
             <el-footer>
                 <p class="mz">免责声明：视频服务仅支持学习交流，勿用非法用途！本站不承担任何责任！</p>
-                <div>All Content &copy; 蓝天之约 2020.10</div>
+                <p class="copyright">All Content &copy; 蓝天之约 2020.10</p>
             </el-footer>
         </el-container>
     </div>
@@ -45,20 +45,26 @@
                     input:"",
                     select:"",
                     playUrl:"./readme.html",
-                    btnStatus:true
+                    btnStatus:false
                 }
             },
             methods:{
                 iputChange(){
-                    var patt = /http(s{0,1}):\/\/[\w-]+(\.[\w-]+)+/i;
-                    if (this.input.length > 0 && patt.test(this.input)) {
+                    var patt = /http(s{0,1}):\/\/[\w-]+((?!\/)(\.[\w-]+))+/i;
+                    if (this.input=="") {
+                        this.btnStatus = false;
+                    }else if (patt.test(this.input)) {
                         this.btnStatus = false;
                     }else{
                         this.btnStatus = true;
-                    }/^(((ht|f)tps?):\/\/)?[\w-]+(\.[\w-]+)+([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])?$/
+                    }
                 },
                 play(){
-                    this.playUrl = this.select + this.input;
+                    if (this.input=="") {
+                        this.playUrl = "./readme.html"
+                    }else{
+                        this.playUrl = this.select + this.input;
+                    }
                 }
             },
             mounted: function() {
