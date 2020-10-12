@@ -78,7 +78,7 @@ i.el-select__caret,.input-with-select .el-input-group__prepend,.input-with-selec
     background-color: #ffffff;
     color: #409EFF;
 }
-i.el-icon-arrow-up{
+i.el-select__caret.el-input__icon.el-icon-arrow-up{
     background-color: #ffffff00;
 }
 p.mz{
