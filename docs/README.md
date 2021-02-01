@@ -6,4 +6,4 @@
 2. [哈啰单车二维码生成](https://mg.medfav.tk/HelloQRcode)
 3. [VIP视频解析](https://mg.medfav.tk/video)
 4. [Windows 操作系统微软官方镜像及激活工具](https://mg.medfav.tk/Win)
-
+5. [IP计算器](https://mg.medfav.tk/ipcalc)
