@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="dns-prefetch" href=".." />
+    <link rel="dns-prefetch" href=".." />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ipcalc/favicon16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./ipcalc/favicon32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="./ipcalc/favicon48.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./ipcalc/favicon64.png" />
+    <title>在线网络计算器 | TCP/IP子网掩码计算换算 —在线工具</title>
+    <meta name="keywords" content="子网,子网掩码,子网划分,A类,B类,C类子网区别,网络计算,网络地址分配,掩码计算" />
+    <meta name="description" content="局域网规划工具,子网计算划分,子网掩码各个进制表示换算,IP地址进制表示换算。" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./ipcalc/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./ipcalc/favicon.ico" />
+    <link href="./js/common/ipcalc.b.t/css/b.css" rel="stylesheet" />
+    <link href="./css/change/toolstyle.css" rel="stylesheet" />
+    <link href="./css/common/base.css?202011132039" rel="stylesheet" />
+</head>
+
+<body data-target="#one" data-spy="scroll"> <input type="hidden" id="ie_marker" value="1" />
+    
+    <div class="container">
+        <div class="row">
+            <div class="toolsTab clearfix" style="padding-bottom: 15px; margin-top: 0px;">
+                <ul class="nav nav-tabs _load">
+                    <li class="active"> <a href="./convert/subnetmask.html">子网掩码换算</a></li>
+                    <!-- 
+                    <li class=" "> <a href="./convert/power.html">功率换算</a></li>
+                    <li class=" "><a href="./convert/pressure.html">压力换算</a></li>
+                    -->
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="NetWorkWrap pb10 clearfix">
+                <!-- NetWork-right-begin -->
+                <div class="NetWork-left fl">
+                    <form>
+                        <div class="NetWork-main01 bor-a1s">
+                            <h3 class="MainHead bb-blue" style="margin-top: 0px; height: 34px;">网络和IP地址计算器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix ptb10 bb-blue bg-blue02 ipgroup"> <label
+                                        class="w60 tr">输入IP</label> <input type="text" n="ip1" name="ip_1" value="192"
+                                        maxlength="15" size="3" class="Intxt"> <input type="text" n="ip2" name="ip_2"
+                                        value="168" maxlength="15" size="3" class="Intxt"> <input type="text" n="ip3"
+                                        name="ip_3" value="0" maxlength="15" size="3" class="Intxt"> <input type="text"
+                                        n="ip4" name="ip_4" value="1" maxlength="15" size="3" class="Intxt"> <label
+                                        class="w50 tr">掩码位</label> <input type="text" name="bits" value="24" size="2"
+                                        class="Intxt"> <input type="button" onclick="calNBFL(this.form)" value="计算"
+                                        class="Inbtn"> <input type="button" onclick="resetform4(this.form)" value="清空"
+                                        class="Inbtn"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">可用IP</label> <input
+                                        type="text" name="numofaddr" size="10" readonly="" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">掩码</label> <input
+                                        type="text" name="snm_1" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="snm_2" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="snm_3" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="snm_4" size="3" maxlength="3" readonly="" class="Intxt">
+                                </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">网络</label> <input
+                                        type="text" name="nwadr_1" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="nwadr_2" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="nwadr_3" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="nwadr_4" size="3" maxlength="3" readonly="" class="Intxt">
+                                </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">第一可用</label> <input
+                                        type="text" name="firstadr_1" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="firstadr_2" size="3" maxlength="3" readonly=""
+                                        class="Intxt"> <input type="text" name="firstadr_3" size="3" maxlength="3"
+                                        readonly="" class="Intxt"> <input type="text" name="firstadr_4" size="3"
+                                        maxlength="3" readonly="" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">最后可用</label> <input
+                                        type="text" name="lastadr_1" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="lastadr_2" size="3" maxlength="3" readonly=""
+                                        class="Intxt"> <input type="text" name="lastadr_3" size="3" maxlength="3"
+                                        readonly="" class="Intxt"> <input type="text" name="lastadr_4" size="3"
+                                        maxlength="3" readonly="" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">广播</label> <input
+                                        type="text" name="bcast_1" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="bcast_2" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="bcast_3" size="3" maxlength="3" readonly="" class="Intxt">
+                                    <input type="text" name="bcast_4" size="3" maxlength="3" readonly="" class="Intxt">
+                                </div>
+                                <div class="MCentlist ptb10 col-gray04 bor-t1s mt10">
+                                    <p>显示网络，广播，第一次和最后一个给定的网络地址</p>
+                                    <p>在网络掩码“位格式”也被称为CIDR格式（CIDR=无类别域间路由选择）。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">子网掩码转换器（位点分十进制格式) </h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix ptb10 bb-blue bg-blue02"> <label
+                                        class="w82 tr">掩码</label> <input type="text" name="bits" value="24" size="4"
+                                        class="Intxt"> <input type="button" onclick="calcNWmaskForm2(this.form)"
+                                        value="计算" class="Inbtn"> <input type="button" onclick="resetform2(this.form)"
+                                        value="清空" class="Inbtn"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w82 tr">Dec 十进制</label> <input
+                                        type="text" name="snm_1" size="3" readonly="" class="Intxt"> <input type="text"
+                                        name="snm_2" size="3" readonly="" class="Intxt"> <input type="text" name="snm_3"
+                                        size="3" readonly="" class="Intxt"> <input type="text" name="snm_4" size="3"
+                                        readonly="" class="Intxt"> </div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w82 tr">Hex十六进制</label> <input
+                                        type="text" name="hex_1" size="2" readonly="" class="Intxt"> <input type="text"
+                                        name="hex_2" size="2" readonly="" class="Intxt"> <input type="text" name="hex_3"
+                                        size="2" readonly="" class="Intxt"> <input type="text" name="hex_4" size="2"
+                                        readonly="" class="Intxt"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">网络/节点计算器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix pt10 bg-blue02 ipgroup"> <label
+                                        class="w60 tr">子网掩码</label> <input type="text" n="ip1" value="255"
+                                        maxlength="15" size="3" name="snm1a" class="Intxt"> <input type="text" n="ip2"
+                                        value="255" maxlength="15" size="3" name="snm2a" class="Intxt"> <input
+                                        type="text" n="ip3" value="255" maxlength="15" size="3" name="snm3a"
+                                        class="Intxt"> <input type="text" n="ip4" value="0" maxlength="15" size="3"
+                                        name="snm4a" class="Intxt"> </div>
+                                <div class="MCentlist clearfix ptb10 bb-blue bg-blue02 ipgroup"> <label
+                                        class="w60 tr">TCP/IP</label> <input type="text" n="ip1" value="192"
+                                        maxlength="15" size="3" name="oct1a" class="Intxt"> <input type="text" n="ip2"
+                                        value="168" maxlength="15" size="3" name="oct2a" class="Intxt"> <input
+                                        type="text" n="ip3" value="0" maxlength="15" size="3" name="oct3a"
+                                        class="Intxt"> <input type="text" n="ip4" value="1" maxlength="15" size="3"
+                                        name="oct4a" class="Intxt"> <input type="button" onclick="compute(this.form)"
+                                        value="计算" class="Inbtn"> <input type="button" onclick="nnclear(this.form)"
+                                        value="清空" class="Inbtn"></div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">网络</label> <input
+                                        type="text" maxlength="3" size="3" name="nw1a" readonly="" class="Intxt"> <input
+                                        type="text" maxlength="3" size="3" name="nw2a" readonly="" class="Intxt"> <input
+                                        type="text" maxlength="3" size="3" name="nw3a" readonly="" class="Intxt"> <input
+                                        type="text" maxlength="3" size="3" name="nw4a" readonly="" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w60 tr">节点/主机</label> <input
+                                        type="text" maxlength="3" size="3" name="node1a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="node2a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="node3a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="node4a" readonly="" class="Intxt">
+                                </div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w60 tr">广播地址</label> <input
+                                        type="text" maxlength="3" size="3" name="broad1a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="broad2a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="broad3a" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="broad4a" readonly="" class="Intxt">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">十进制子网掩码逆算器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix pt10 ipgroup"> <label class="w70 tr">点格式掩码</label> <input
+                                        type="text" n="ip1" value="255" maxlength="15" size="3" name="snm1d"
+                                        class="Intxt"> <input type="text" n="ip2" value="255" maxlength="15" size="3"
+                                        name="snm2d" class="Intxt"> <input type="text" n="ip3" value="255"
+                                        maxlength="15" size="3" name="snm3d" class="Intxt"> <input type="text" n="ip4"
+                                        value="0" maxlength="15" size="3" name="snm4d" class="Intxt"> <input
+                                        type="button" onclick="computeINV1(this.form);" value="计算" class="Inbtn"> <input
+                                        type="button" onclick="sjzclear(this.form);" value="清空" class="Inbtn"></div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w70 tr">逆算掩码</label> <input
+                                        type="text" maxlength="3" size="3" name="snm1e" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="snm2e" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="snm3e" readonly="" class="Intxt">
+                                    <input type="text" maxlength="3" size="3" name="snm4e" readonly="" class="Intxt">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">十进制子网掩码换算器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix pt10 ipgroup"> <label class="w70 tr">点格式掩码</label> <input
+                                        type="text" n="ip1" maxlength="15" size="3" name="snm1c" class="Intxt"> <input
+                                        type="text" n="ip2" maxlength="15" size="3" name="snm2c" class="Intxt"> <input
+                                        type="text" n="ip3" maxlength="15" size="3" name="snm3c" class="Intxt"> <input
+                                        type="text" n="ip4" maxlength="15" size="3" name="snm4c" class="Intxt"> <input
+                                        type="button" onclick="computeSNMA(this.form);" value="计算" class="Inbtn"> <input
+                                        type="button" onclick="dgsclear(this.form);" value="清空" class="Inbtn"> </div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w70 tr">掩码位元数</label> <input
+                                        type="text" value="24" maxlength="2" size="2" name="snmbitsc" class="Intxt">
+                                    <input type="button" onclick="computeSNMB(this.form);" value="计算" class="Inbtn">
+                                    <input type="button" onclick="ymwclear(this.form);" value="清空" class="Inbtn"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">计算位补一个IP地址（逆）</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix pt10 ipgroup"> <input type="text" n="ip1" name="ip_1"
+                                        value="255" maxlength="15" size="3" class="Intxt"> <input type="text" n="ip2"
+                                        name="ip_2" value="255" maxlength="15" size="3" class="Intxt"> <input
+                                        type="text" n="ip3" name="ip_3" value="255" maxlength="15" size="3"
+                                        class="Intxt"> <input type="text" n="ip4" name="ip_4" value="255" maxlength="15"
+                                        size="3" class="Intxt"> <input type="button" onclick="calcIpInvert(this.form)"
+                                        value="计算" class="Inbtn"> <input type="button" onclick="resetform8(this.form)"
+                                        value="清空" class="Inbtn"> </div>
+                                <div class="MCentlist clearfix ptb10"> <input type="text" name="invert_1" size="3"
+                                        readonly="" class="Intxt"> <input type="text" name="invert_2" size="3"
+                                        readonly="" class="Intxt"> <input type="text" name="invert_3" size="3"
+                                        readonly="" class="Intxt"> <input type="text" name="invert_4" size="3"
+                                        readonly="" class="Intxt"> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="NetWork-right fr">
+                    <form>
+                        <div class="NetWork-main01 bor-a1s">
+                            <h3 class="MainHead bb-blue">网络和IP地址计算器</h3>
+                            <div class="MainCent pr">
+                                <div class="MCentlist clearfix pt10 ipgroup"> <label class="w70 tr">输入IP/TCP</label>
+                                    <input type="text" n="ip1" value="192" maxlength="15" size="3" name="oct1"
+                                        class="Intxt"> <input type="text" n="ip2" value="168" maxlength="15" size="3"
+                                        name="oct2" class="Intxt"> <input type="text" n="ip3" value="0" maxlength="15"
+                                        size="3" name="oct3" class="Intxt"> <input type="text" n="ip4" value="1"
+                                        maxlength="15" size="3" name="oct4" class="Intxt"> <label
+                                        class="w60 tr pr5">网络类型</label>
+                                    <div class="NetWork-choese ToolChoese mr15">
+                                        <div class="NetWorkW-choese pr w60">
+                                            <select name="cf" id="cf">
+                                                <option value="1" selected>默认</option>
+                                                <option value="2">A类网</option>
+                                                <option value="3">B类网</option>
+                                                <option value="4">C类网</option>
+                                            </select>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr pr10"
+                                        style="width: 80px;">子网ip量</label>
+                                    <div class="NetWork-choese ToolChoese">
+                                        <div class="NetWorkW-choese pr w70">
+                                            <select name="network" id="network">
+                                                <option value="" selected>-</option>
+                                                <option value="1" >1</option>
+                                                <option value="2" >2</option>
+                                                <option value="4" >4</option>
+                                                <option value="8" >8</option>
+                                                <option value="16" >16</option>
+                                                <option value="32" >32</option>
+                                                <option value="64" >64</option>
+                                                <option value="128" >128</option>
+                                                <option value="256" >256</option>
+                                                <option value="512" >512</option>
+                                                <option value="1024" >1024</option>
+                                                <option value="2048" >2048</option>
+                                                <option value="4096" >4096</option>
+                                                <option value="8192" >8192</option>
+                                                <option value="16384" >16384</option>
+                                                <option value="32768" >32768</option>
+                                                <option value="65536" >65536</option>
+                                                <option value="131072" >131072</option>
+                                                <option value="262144" >262144</option>
+                                                <option value="524288" >524288</option>
+                                                <option value="1048576" >1048576</option>
+                                                <option value="2097152" >2097152</option>
+                                                <option value="4194304" >4194304</option>
+                                                <option value="8388608" >8388608</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">节点/主机</label>
+                                    <div class="NetWork-choese ToolChoese fl ml10">
+                                        <div class="NetWorkW-choese pr w100">
+                                            <select name="node" id="node">
+                                                <option value="" selected >-</option>
+                                                <option value="1" >1</option>
+                                                <option value="2" >2</option>
+                                                <option value="4" >4</option>
+                                                <option value="8" >8</option>
+                                                <option value="16" >16</option>
+                                                <option value="32" >32</option>
+                                                <option value="64" >64</option>
+                                                <option value="128" >128</option>
+                                                <option value="256" >256</option>
+                                                <option value="512" >512</option>
+                                                <option value="1024" >1024</option>
+                                                <option value="2048" >2048</option>
+                                                <option value="4096" >4096</option>
+                                                <option value="8192" >8192</option>
+                                                <option value="16384" >16384</option>
+                                                <option value="32768" >32768</option>
+                                                <option value="65536" >65536</option>
+                                                <option value="131072" >131072</option>
+                                                <option value="262144" >262144</option>
+                                                <option value="524288" >524288</option>
+                                                <option value="1048576" >1048576</option>
+                                                <option value="2097152" >2097152</option>
+                                                <option value="4194304" >4194304</option>
+                                                <option value="8388608" >8388608</option>
+                                                <option value="16777216" >16777216</option>
+                                                <option value="33554432" >33554432</option>
+                                                <option value="67108864" >67108864</option>
+                                                <option value="134217728" >134217728</option>
+                                                <option value="268435456" >268435456</option>
+                                                <option value="536870912" >536870912</option>
+                                                <option value="1073741824" >1073741824</option>
+                                                <option value="2147483648" >2147483648</option>
+                                            </select>
+                                        </div>
+                                    </div> <input type="button" onclick="compute2(this.form);" value="计算" class="Inbtn">
+                                    <input type="button" onclick="wlclear(this.form);" value="清空" class="Inbtn">
+                                </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">网络类型</label> <input
+                                        type="text" maxlength="7" size="7" name="nwclass" class="Intxt"> <input
+                                        type="text" maxlength="14" size="14" name="subsuper" class="Intxt"> <input
+                                        type="text" maxlength="7" size="7" name="nwclass1" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">子网掩码</label> <input
+                                        type="text" maxlength="3" size="3" name="snm1" class="Intxt"> <input type="text"
+                                        maxlength="3" size="3" name="snm2" class="Intxt"> <input type="text"
+                                        maxlength="3" size="3" name="snm3" class="Intxt"> <input type="text"
+                                        maxlength="3" size="3" name="snm4" class="Intxt"> <label
+                                        class="w25 tr">或</label> <input type="text" maxlength="3" size="3"
+                                        name="snmbits" class="Intxt"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">子网</label> <input
+                                        type="text" maxlength="8" size="10" name="nwquant" class="Intxt w100"> <input
+                                        type="button" onclick="listsubnets(this.form);" class="Inbtn w100 tc ObtLBtN"
+                                        value="获取网络列表"> </div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w70 tr">节点/主机</label> <input
+                                        type="text" maxlength="8" size="10" name="nodequant" class="Intxt w100"> </div>
+                                <div id="netlist" class="ObtainList autohide">
+                                    <h4 class="lh30 col-blue02 pr">网络列表<span class="col-gray02 lh24 fwnone pl10">网络
+                                            0.0.0.0 ，掩码0.0.0.0"</span><a class="ObtLClose" href="javascript:">×</a></h4>
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2">网络</th>
+                                                <th colspan="2">主机</th>
+                                                <th rowspan="2">广播地址</th>
+                                            </tr>
+                                            <tr>
+                                                <th>起始</th>
+                                                <th>结束</th>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                                <td>0.0.0.0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">通过主机数量计算掩码地址转换器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix ptb10 bb-blue bg-blue02"> <label class="w60">需要数量</label>
+                                    <input type="text" name="numofaddr" value="5" size="4" class="Intxt"> <input
+                                        type="button" onclick="calcNeeded(this.form)" value="计算" class="Inbtn"> <input
+                                        type="button" onclick="resetform6(this.form)" value="清空" class="Inbtn"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w50 pr10 tr">掩码</label> <input
+                                        type="text" name="bits" size="4" readonly="" class="Intxt"> <label
+                                        class="w110 tr"> dotted dec. 掩码</label> <input type="text" name="snm_1" size="3"
+                                        readonly="" class="Intxt"> <input type="text" name="snm_2" size="3" readonly=""
+                                        class="Intxt"> <input type="text" name="snm_3" size="3" readonly=""
+                                        class="Intxt"> <input type="text" name="snm_4" size="3" readonly=""
+                                        class="Intxt"> </div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w60">可用数量</label> <input
+                                        type="text" name="maxaddr" size="10" readonly="" class="Intxt w100"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">TCP/IP 进制转换器</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix pt10 ipgroup"> <label class="w80 tr">点格式十进制</label>
+                                    <input type="text" n="ip1" value="192" maxlength="15" size="3" name="oct1b"
+                                        class="Intxt"> <input type="text" n="ip2" value="168" maxlength="15" size="3"
+                                        name="oct2b" class="Intxt"> <input type="text" n="ip3" value="0" maxlength="15"
+                                        size="3" name="oct3b" class="Intxt"> <input type="text" n="ip4" value="1"
+                                        maxlength="15" size="3" name="oct4b" class="Intxt"> <input type="button"
+                                        onclick="compute3(this.form);" value="计算" class="Inbtn"> 
+                                        <input  type="button" onclick="resetform13(this.form);" value="清空" class="Inbtn"></div>
+                                <div class="MCentlist clearfix pt10"> <label class="w80 tr">或 二进制</label> <input
+                                        type="text" maxlength="8" size="8" name="bin1b" class="Intxt w60"> <input
+                                        type="text" maxlength="8" size="8" name="bin2b" class="Intxt w60"> <input
+                                        type="text" maxlength="8" size="8" name="bin3b" class="Intxt w60"> <input
+                                        type="text" maxlength="8" size="8" name="bin4b" class="Intxt w60"> <input
+                                        type="button" onclick="compute4(this.form);" value="计算" class="Inbtn"> 
+                                        <input  type="button" onclick="resetform13(this.form);" value="清空" class="Inbtn"></div>
+                                <div class="MCentlist clearfix pt10"> <label class="w80 tr">或 十六进制</label> <input
+                                        type="text" maxlength="2" size="2" name="hex1b" class="Intxt"> <input
+                                        type="text" maxlength="2" size="2" name="hex2b" class="Intxt"> <input
+                                        type="text" maxlength="2" size="2" name="hex3b" class="Intxt"> <input
+                                        type="text" maxlength="2" size="2" name="hex4b" class="Intxt"> <input
+                                        type="button" onclick="compute5(this.form);" value="计算" class="Inbtn"> 
+                                        <input  type="button" onclick="resetform13(this.form);" value="清空" class="Inbtn"></div>
+                                <div class="MCentlist clearfix ptb10"> <label class="w80 tr">或 十进制</label> <input
+                                        type="text" maxlength="10" size="10" name="dec1b" class="Intxt w100"> <input
+                                        type="button" onclick="compute6(this.form);" value="计算" class="Inbtn">
+                                        <input  type="button" onclick="resetform13(this.form);" value="清空" class="Inbtn"> </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="NetWork-main01 bor-a1s mt20">
+                            <h3 class="MainHead bb-blue">掩码转换到网络可用地址的数量</h3>
+                            <div class="MainCent">
+                                <div class="MCentlist clearfix ptb10 bb-blue bg-blue02"> <label
+                                        class="w70 tr">掩码</label> <input type="text" name="bits" value="27" size="2"
+                                        class="Intxt"> <input type="button" onclick="calcAmount(this.form)" value="计算"
+                                        class="Inbtn"> <input type="button" onclick="resetform7(this.form)" value="清空"
+                                        class="Inbtn"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">可用地址量</label> <input
+                                        type="text" name="numofaddr" size="10" readonly="" class="Intxt w100"> <label
+                                        class="w70 tr">可用总量</label> <input type="text" name="maxaddr" size="10"
+                                        readonly="" class="Intxt w100"> </div>
+                                <div class="MCentlist clearfix pt10"> <label class="w70 tr">点分十进制</label> <input
+                                        type="text" name="snm_1" size="3" readonly="" class="Intxt"> <input type="text"
+                                        name="snm_2" size="3" readonly="" class="Intxt"> <input type="text" name="snm_3"
+                                        size="3" readonly="" class="Intxt"> <input type="text" name="snm_4" size="3"
+                                        readonly="" class="Intxt"> </div>
+                                <div class="MCentlist ptb10 col-gray04 bor-t1s mt10">
+                                    <p>IP组播地址范围</p>
+                                    <p>所有的多播地址可以很容易被认出，因为同位模式“1110”开始。</p>
+                                    <p>224.0.0.0 - 224.0.0.255知名多播地址，控制通道</p>
+                                    <p>224.0.1.0 - 238.255.255.255全球范围的（互联网宽）组播地址</p>
+                                    <p>239.0.0.0 - 239.255.255.255本地多播地址</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--NetWork-right-end-->
+            </div>
+            <div class="ToolAbout wrapper03 mt10">
+                <div class="clearfix">
+                    <h4 class="HeadH4 YaHei fz16 col-blue02 fwnone fl">工具简介</h4>
+                    <div id="toolsIntro" class="fr fz14"></div>
+                </div>
+                <div class="col-gray01 ToolAbCont">
+                    <p>局域网规划工具,子网计算划分,子网掩码各个进制表示换算,IP地址进制表示换算。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/change/ipcalc.js"></script>
+    <script src="./js/common/jquery.slim.min.js"></script>
+    </script>
+</body>
+
+</html>
