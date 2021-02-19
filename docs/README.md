@@ -7,3 +7,4 @@
 3. [VIP视频解析](https://mg.medfav.tk/video)
 4. [Windows 操作系统微软官方镜像及激活工具](https://mg.medfav.tk/Win)
 5. [IP计算器](https://mg.medfav.tk/ipcalc)
+6. [网址导航](https://mg.medfav.tk/webnav)
