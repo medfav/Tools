@@ -36,7 +36,7 @@ var Main = {
       querySearch:(queryString, cb) => {
         // bing搜索建议
         $.ajax({
-          url: "http://api.bing.com/qsonhs.aspx?type=cb&q=" + queryString + "&cb=window.bing.sug",
+          url: "https://api.bing.com/qsonhs.aspx?type=cb&q=" + queryString + "&cb=window.bing.sug",
           type: "GET",
           dataType: "jsonp"
         })
