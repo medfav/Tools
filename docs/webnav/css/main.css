@@ -1,0 +1,211 @@
+* {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+html,body,div,span{
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    outline: 0;
+}
+/* 滚动条样式 开始 */
+html{
+    overflow: hidden;
+}
+html:hover{
+    overflow: overlay;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: hsla(0, 0%, 53%, 0.1);
+}
+   
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 53%, 0.4);
+    border-radius: 4px;
+}
+/* 滚动条样式 结束 */
+.loading{
+    display: block;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin: 20px auto 100px auto;
+    color: #7f7f7f;
+}
+.loading i {
+    font-size: 64px;
+    line-height: 64px;
+}
+div.el-row{
+    min-width: 610px; 
+}
+.el-col{
+    min-height: 1px;
+}
+.el-header,.el-header>.logo,.el-header .logo span {
+    min-height: 1px;
+    height: 75px !important;
+    line-height: 40px;
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+    color: #e54348;
+    padding: 0px;
+}
+.el-header>div.searchbtn{
+    display: block;
+    float: right;
+}
+.el-header p>div.el-autocomplete:last-child{
+    clear: both;
+}
+.el-header>div>p{
+    display: inline;
+    height: 1px;
+}
+.el-header>div>p>button {
+    background-color: #e54348;
+    border-color: #e54348;
+    float: left;
+    padding: 0px 3px;
+    margin-top: 3px;
+    margin-left: 1px;
+    line-height: 28px;
+    border-radius: 0px;
+}
+/* button:last-of-type{
+    margin-left: 0px !important;
+} */
+button.el-button+button.el-button{
+    margin-left: 1px;
+}
+div.logo {
+    background-repeat: no-repeat;
+    background-size: auto 40px;
+    display: inline-block;
+}
+.logo img,.logo a {
+    height: 40px;
+    width: auto;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.el-autocomplete{
+    float: right;
+    line-height: 30px !important;
+    width: 400px;
+}
+.el-autocomplete.el-input,.el-autocomplete input{
+    height: 30px !important;
+    /* border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; */
+    width: 400px;
+}
+.el-autocomplete input:focus{
+    border-color: #e54348;
+}
+.el-tabs--border-card>.el-tabs__header .el-tabs__item:first-child {
+    background-color: #e54348;
+    color: white;
+}
+.group-title-icon i {
+    margin-right: 5px;
+}
+div.el-tabs__item {
+    height: 30px;
+    line-height: 30px;
+    padding:0 10px !important;
+}
+div.el-tabs__item.is-active{
+    color: #776e6e;
+}
+div.el-tabs{
+    padding: 20px 0px 0px 0px;
+}
+div.el-tabs--border-card {
+    border: none;
+}
+main.el-main{
+    padding: 0px;
+}
+.el-tabs>div.el-tabs__content{
+    padding: 20px 0px;
+}
+div.link-content > div {
+    color: #6d6d6d;
+    display: inline-block;
+    padding: 1px;
+    margin: 2px;
+    margin-right: 10px;
+    width: 12.717%;
+    min-width: 114px;
+    max-width: 145px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border: solid 1px #ffc3c4;
+    border-radius: 18px;
+    font-size: 13px;
+}
+div.link-content a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #6d6d6d;
+}
+div.link-content a>div {
+    display: inline-block;
+    width: 16px;
+    height: 16px; 
+    line-height: 16px;
+    vertical-align: middle;
+    color: #6d6d6d;
+}
+div.link-content a:hover {
+    color: #409EFF;
+}
+div.el-image__placeholder::before{
+    background-color: white;
+    font-family: element-icons;
+    content: "\e6cf";
+}
+div.link-content a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 22px;
+    border-radius: 50%;
+}
+div.link-content span{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+.footbar>.el-col:nth-child(2) {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 0 auto;
+}
+.footbar a {
+    color: gray;
+    text-decoration: none;
+}
+.footbar a:hover {
+    text-decoration: underline;
+}
+img.pic-empty {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+}
