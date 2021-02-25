@@ -55,7 +55,7 @@
                                             <div v-for="(item, index) in tab.link_items" >
                                                 <el-badge v-if="item.mark=='new'||item.mark=='hot'" :value="item.mark">
                                                     <a :href="item.link" target="_blank" :title="item.title">
-                                                        <el-image :src="item.icon" fit="cover">
+                                                        <el-image :src="(item.icon==undefined?item.link+'./favicon.ico':item.icon)" fit="cover">
                                                             <div slot="error" class="image-slot">
                                                                 <i class="el-icon-picture"></i>
                                                             </div>
@@ -64,7 +64,7 @@
                                                     </a>
                                                 </el-badge>
                                                 <a :href="item.link" v-else target="_blank" :title="item.title">
-                                                    <el-image :src="item.icon" fit="cover">
+                                                    <el-image :src="(item.icon==undefined?item.link+'./favicon.ico':item.icon)" fit="cover">
                                                         <div slot="error" class="image-slot">
                                                             <i class="el-icon-picture"></i>
                                                         </div>
