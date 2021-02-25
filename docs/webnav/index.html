@@ -36,21 +36,21 @@
                                 </a>
                             </div>
                             <div class="searchbtn">
-                                <p><el-button type="primary" @click="searchButton(item.id)" :icon="item.icon" v-for="(item,index) in config.search_config">{{item.name}}</el-button></p>
+                                <p><el-button type="primary" @click="searchButton(item.id)" :icon="item.icon" v-for="(item,index) in config.search_config" :key="index">{{item.name}}</el-button></p>
                                 <p><el-autocomplete class="inline-input" v-model="searchbox_value" :fetch-suggestions="querySearch" placeholder="请输入搜索内容，默认使用百度搜索" :trigger-on-focus="false" :select-when-unmatched="true" @select="handleSelect" :highlight-first-item="true"></el-autocomplete></p>
                             </div>
                         </el-header>
                         <el-main >
                             <div v-show="tab_groups=='undifine'||tab_groups.length==0" class="loading">
                                 <i class="el-icon-loading"></i><br>
-                                正在加载数据......
+                                {{load_info}}
                             </div>
                             <div id="tab-title" class="tab-title" v-show="tab_groups!='undifine'&&tab_groups.length > 0" style="display: none;">
-                                <el-tabs v-model="group.group_id + group.active_tab" v-for="(group,index) in tab_groups" type="border-card" @tab-click="handleClick">
+                                <el-tabs :value="group.group_id + group.active_tab" v-for="(group,index) in tab_groups" :key="index" type="border-card" @tab-click="handleClick">
                                     <el-tab-pane disabled>
                                         <span class="group-title-icon" slot="label"><i :class="group.group_icon"></i>{{group.group_name}}</span>
                                     </el-tab-pane>
-                                    <el-tab-pane :label="tab.tab_title" :name="group.group_id + tab.tab_index" v-for="(tab,index) in group.tabs">
+                                    <el-tab-pane :label="tab.tab_title" :name="group.group_id + tab.tab_index" v-for="(tab,index) in group.tabs" :key="index">
                                         <div class="link-content" v-if="tab.link_items.length>0">
                                             <div v-for="(item, index) in tab.link_items" >
                                                 <el-badge v-if="item.mark=='new'||item.mark=='hot'" :value="item.mark">
