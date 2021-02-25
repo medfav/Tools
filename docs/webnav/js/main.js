@@ -20,6 +20,7 @@ var Main = {
               default_search:"baidu",
               search_config:[]
             },
+            load_info:"正在加载数据......",
             config_url: "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
             activeName: ['g1t1','g2t1'],
             // all_items: [],
@@ -70,6 +71,29 @@ var Main = {
               }
             }
           })
+        },
+        isJSON:function(str) {
+            if (typeof str == 'object'){
+                console.log('It is not a Object!');
+                return true;
+            }
+            if (typeof str == 'string') {
+                try {
+                    var obj=JSON.parse(str);
+                    if(typeof obj == 'object' && obj ){
+                        console.log('It is a JSON!');
+                        return true;
+                    }else{
+                        console.log('It is not a JSON!');
+                        return false;
+                    }
+                } catch(e) {
+                    console.log('error：JSON格式错误！');
+                    return false;
+                }
+            }
+            console.log('It is not a string!');
+            return false;
         }
     },
     mounted: function() {
@@ -81,7 +105,12 @@ var Main = {
         "Content-Type":"application/json; charset=UTF-8"
       })
       .then(response => {
-        const config = response.data;
+        if(!this.isJSON(response.data)){
+            console.log("配置文件错误!");
+            this.load_info = "配置文件错误!";
+            return;
+        }
+        const config = typeof response.data == "string"?JSON.parse(response.data):response.data;
         this.config.logo_img = config.logo_config.logo_img;
         this.config.logo_img_url = config.logo_config.logo_img_url;
         this.config.logo_text = config.logo_config.logo_text;
@@ -91,7 +120,12 @@ var Main = {
       });
       axios.get(this.config.data_source)
       .then(response => {
-        this.tab_groups = response.data;
+        if(!this.isJSON(response.data)){
+            console.log("数据文件错误!");
+            this.load_info = "数据文件错误!";
+            return;
+        }
+        this.tab_groups = typeof response.data == "string"?JSON.parse(response.data):response.data;
       });
       // axios.get("https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json")
       // .then(response => {
