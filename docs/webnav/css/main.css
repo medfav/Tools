@@ -135,7 +135,7 @@ main.el-main{
 }
 div.link-content > div {
     color: #6d6d6d;
-    display: inline-block;
+    display: inline-flex;
     padding: 1px;
     margin: 2px;
     margin-right: 10px;
@@ -148,6 +148,9 @@ div.link-content > div {
     border: solid 1px #ffc3c4;
     border-radius: 18px;
     font-size: 13px;
+}
+div.link-content .el-badge {
+	margin: 0 auto;
 }
 div.link-content a {
     position: relative;
