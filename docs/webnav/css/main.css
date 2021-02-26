@@ -131,7 +131,7 @@ main.el-main{
     padding: 0px;
 }
 .el-tabs>div.el-tabs__content{
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 div.link-content > div {
     color: #6d6d6d;
@@ -139,6 +139,7 @@ div.link-content > div {
     padding: 1px;
     margin: 2px;
     margin-right: 10px;
+    margin-bottom: 7px;
     width: 12.717%;
     min-width: 114px;
     max-width: 145px;
