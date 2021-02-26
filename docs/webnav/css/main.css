@@ -63,7 +63,7 @@ div.el-row{
 }
 .el-header>div>p{
     display: inline;
-    height: 1px;
+    min-height: 1px;
 }
 .el-header>div>p>button {
     background-color: #e54348;
@@ -158,6 +158,9 @@ div.link-content a {
     line-height: 22px;
     font-size: 13px;
     color: #6d6d6d;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
 }
 div.link-content a>div {
     display: inline-block;
