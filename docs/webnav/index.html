@@ -50,7 +50,7 @@
                                     <el-tab-pane disabled>
                                         <span class="group-title-icon" slot="label"><i :class="group.group_icon"></i>{{group.group_name}}</span>
                                     </el-tab-pane>
-                                    <el-tab-pane :label="tab.tab_title" :name="group.group_id + tab.tab_index" v-for="(tab,index) in group.tabs" :key="index">
+                                    <el-tab-pane :label="tab.tab_title" :name="group.group_id + tab.tab_index" v-for="(tab,index) in group.tabs" :key="index" lazy>
                                         <div class="link-content" v-if="tab.link_items.length>0">
                                             <div v-for="(item, index) in tab.link_items" >
                                                 <el-badge v-if="item.mark=='new'||item.mark=='hot'" :value="item.mark">
