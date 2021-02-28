@@ -196,14 +196,18 @@ div.link-content span{
     vertical-align: middle;
 }
 .footbar>.el-col:nth-child(2) {
+    height: 70px;
+    line-height: 70px;
+    margin: 30px auto 0 auto;
+}
+.footbar .el-col p {
     text-align: center;
     font-size: 12px;
     color: gray;
-    height: 50px;
-    line-height: 50px;
-    margin: 30px auto 0 auto;
+    height: 25px;
+    line-height: 25px;
 }
-.footbar a {
+.footbar a,.footbar span {
     color: gray;
     text-decoration: none;
 }
