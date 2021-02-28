@@ -12,6 +12,7 @@ var Main = {
         //     activeName: '2016-05-02'
         // };
         return {
+            config_info:{},
             config:{
               logo_img: true,
               logo_img_url:"https://cdn.jsdelivr.net/gh/medfav/MyPage/docs/webnav/img/logo.png",
@@ -26,6 +27,7 @@ var Main = {
             // all_items: [],
             // group_items: [],
             // tab_items: [],
+            source_info:{},
             tab_groups: [],
             searchbox_value:""
           };
@@ -111,6 +113,8 @@ var Main = {
             return;
         }
         const config = typeof response.data == "string"?JSON.parse(response.data):response.data;
+        this.config_info = config.config_info;
+        console.log("配置数据版本：" + config.config_info.data_version + ", 更新日期：" + config.config_info.change_date);
         this.config.logo_img = config.logo_config.logo_img;
         this.config.logo_img_url = config.logo_config.logo_img_url;
         this.config.logo_text = config.logo_config.logo_text;
@@ -125,7 +129,10 @@ var Main = {
             this.load_info = "数据文件错误!";
             return;
         }
-        this.tab_groups = typeof response.data == "string"?JSON.parse(response.data):response.data;
+        let res_data = typeof response.data == "string"?JSON.parse(response.data):response.data;
+        this.source_info = res_data.source_info;
+        console.log("导航数据版本：" + res_data.source_info.data_version + ", 更新日期：" + res_data.source_info.change_date);
+        this.tab_groups = res_data.nav_data;
       });
       // axios.get("https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json")
       // .then(response => {
