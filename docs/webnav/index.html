@@ -37,7 +37,7 @@
                             </div>
                             <div class="searchbtn">
                                 <p><el-button type="primary" @click="searchButton(item.id)" :icon="item.icon" v-for="(item,index) in config.search_config" :key="index">{{item.name}}</el-button></p>
-                                <p><el-autocomplete class="inline-input" v-model="searchbox_value" :fetch-suggestions="querySearch" placeholder="请输入搜索内容，默认使用百度搜索" :trigger-on-focus="false" :select-when-unmatched="true" @select="handleSelect" :highlight-first-item="true"></el-autocomplete></p>
+                                <p><el-autocomplete class="inline-input" v-model="searchbox_value" :fetch-suggestions="querySearch" placeholder="请输入搜索内容，默认使用百度搜索" :trigger-on-focus="false" :select-when-unmatched="true" @select="handleSelect" :highlight-first-item="true" clearable></el-autocomplete></p>
                             </div>
                         </el-header>
                         <el-main >
