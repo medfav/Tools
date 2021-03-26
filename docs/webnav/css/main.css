@@ -97,6 +97,9 @@ div.logo {
     line-height: 30px !important;
     width: 400px;
 }
+.el-autocomplete .el-input__icon {
+    line-height: 30px;
+}
 .el-autocomplete.el-input,.el-autocomplete input{
     height: 30px !important;
     /* border-top-right-radius: 0px;
