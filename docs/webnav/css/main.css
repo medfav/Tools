@@ -98,6 +98,7 @@ div.logo {
     width: 400px;
 }
 .el-autocomplete .el-input__icon {
+    font-size: 20px;
     line-height: 30px;
 }
 .el-autocomplete.el-input,.el-autocomplete input{
