@@ -155,7 +155,8 @@ div.link-content > div {
     font-size: 13px;
 }
 div.link-content .el-badge {
-	margin: 0 auto;
+    margin: 0 auto;
+    max-width: 100%;
 }
 div.link-content a {
     position: relative;
