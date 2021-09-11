@@ -1,0 +1,47 @@
+{
+    "source_info": {
+        "type": "data",
+        "source": "eolinker Mock API",
+        "data_link": "./data/tabData/tabs_framework.json",
+        "create_date": "2021-02-28 14:06:00",
+        "change_date": "2021-06-28 10:27:42",
+        "data_version": "2.0.0"
+    },
+    "nav_data": [{
+            "group_id": "g1",
+            "active_tab": "t1",
+            "group_icon": "el-icon-receiving",
+            "group_name": "软件工具",
+			"data_url":"./data/tabData/group_g1.json",
+            "tabs": []
+        },{
+            "group_id": "g2",
+            "active_tab": "t1",
+            "group_icon": "el-icon-star-off",
+            "group_name": "生活休闲",
+			"data_url":"./data/tabData/group_g2.json",
+            "tabs": []
+        },{
+            "group_id": "g3",
+            "active_tab": "t1",
+            "group_icon": "el-icon-edit-outline",
+            "group_name": "设计开发",
+			"data_url":"./data/tabData/group_g3.json",
+            "tabs": []
+		},{
+            "group_id": "g4",
+            "active_tab": "t1",
+            "group_icon": "el-icon-film",
+            "group_name": "影视欣赏",
+			"data_url":"./data/tabData/group_g4.json",
+            "tabs": []
+		},{
+            "group_id": "g5",
+            "active_tab": "t1",
+            "group_icon": "el-icon-link",
+            "group_name": "网址导航",
+			"data_url":"./data/tabData/group_g5.json",
+            "tabs": []
+		}
+    ]
+}

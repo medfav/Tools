@@ -1,0 +1,34 @@
+{
+	"group_id": "g5",
+	"active_tab": "t1",
+	"group_icon": "el-icon-link",
+	"group_name": "网址导航",
+	"tabs": [{
+		"tab_index": "t1",
+		"tab_title": "综合",
+		"link_items": [{
+				"name": "龙轩导航",
+				"title": "做个有用的导航",
+				"link": "http://ilxdh.com/",
+				"icon": "http://ilxdh.com/favicon.ico"
+			},
+			{
+				"name": "北邮人导航",
+				"title": "北邮人常用的导航页，随时随地 Byr.wiki。一个框，全能搜！若打开缓慢，请访问简洁版 http://so.byr.wiki/",
+				"link": "http://byr.wiki/",
+				"icon": "http://byr.wiki/favicon.ico"
+			},
+			{
+				"name": "亿品设计导航",
+				"title": "国内外优秀设计资源网站网址导航",
+				"link": "http://www.epinv.com/hao/",
+				"icon": "http://www.epinv.com/wp-content/themes/ep/favicon.ico"
+			},
+			{
+				"name": "24k导航",
+				"link": "https://www.24kdh.com/",
+				"icon": "https://www.24kdh.com/wp-content/uploads/2020/07/201910021570016173270585-3.ico"
+			}
+		]
+	}]
+}

@@ -1,0 +1,364 @@
+{
+	"group_id": "g3",
+	"active_tab": "t1",
+	"group_icon": "el-icon-edit-outline",
+	"group_name": "设计开发",
+	"tabs": [{
+			"tab_index": "t1",
+			"tab_title": "设计素材",
+			"link_items": [{
+					"name": "unDraw",
+					"title": "无版权，可随意使用，SVG/PNG图片素材",
+					"link": "https://undraw.co/illustrations",
+					"icon": "https://undraw.co/favicon.ico"
+				},{
+					"name": "Pixabay",
+					"title": "无版权，可随意使用，老牌图库素材",
+					"link": "https://pixabay.com/zh/",
+					"icon": "https://pixabay.com/favicon.ico"
+				},{
+					"name": "Unsplash",
+					"title": "无版权，可随意使用",
+					"link": "https://unsplash.com/",
+					"icon": "https://unsplash.com/favicon.ico"
+				},{
+					"name": "StockSnap",
+					"title": "无版权，可随意使用",
+					"link": "https://stocksnap.io/",
+					"icon": "https://stocksnap.io/img/favicon.ico"
+				},{
+					"name": "Pexels",
+					"title": "免费素材图片",
+					"link": "https://www.pexels.com/zh-cn/",
+					"icon": "https://www.pexels.com/favicon.ico"
+				},{
+					"name": "无版权图片搜索",
+					"title": "一键搜索多家免版权图库，再也不用担心商用图片侵权了",
+					"link": "https://www.logosc.cn/so/",
+					"icon": "https://www.logosc.cn/img/so/search_logo.png"
+				},{
+					"name": "piqsels免版税图库",
+					"title": "基于CC0协议的免版税图库，个人和商业免费使用，无需归属",
+					"link": "https://www.piqsels.com/zh",
+					"icon": "https://www.piqsels.com/public/css/favicon.ico"
+				},{
+					"name": "StickPNG免扣素材",
+					"title": "免费PNG插图资源的素材站点，目前提供超过几万张透明背景图片",
+					"link": "https://www.stickpng.com/",
+					"icon": "https://www.stickpng.com/favicon.ico"
+				},{
+					"name": "免扣PNG图片下载",
+					"title": "提供了海量的高质量免扣PNG图片，分享优质的无背景图和剪贴画",
+					"link": "http://pngimg.com/",
+					"icon": "http://pngimg.com/favicon.ico"
+				},{
+					"name": "LOGO圈",
+					"title": "LOGO世界网是一个logo设计收集网站",
+					"link": "http://www.logoquan.com/",
+					"icon": "http://www.logoquan.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t2",
+			"tab_title": "图标Logo",
+			"link_items": [{
+					"name": "阿里巴巴矢量图标库",
+					"title": "【推荐】阿里推出的矢量图标开放平台，超级好用的矢量图标库",
+					"link": "https://www.iconfont.cn/",
+					"icon": "https://www.iconfont.cn/favicon.ico"
+				},{
+					"name": "IconFinder",
+					"title": "矢量图标下载，格式包含:SVG，PNG， ICO， ICNS等",
+					"link": "https://www.iconfinder.com/free_icons",
+					"icon": "https://www.iconfinder.com/favicon.ico"
+				},{
+					"name": "findicons",
+					"title": "超过50万个免费图标和图标包下载网站",
+					"link": "https://findicons.com/",
+					"icon": "https://findicons.com/favicon.ico"
+				},{
+					"name": "icons8图标",
+					"title": "非常著名的图标网站，提供了海量的可免费商用图标下载。",
+					"link": "https://icons8.com/icons",
+					"icon": "https://icons8.com/vue-static/icon/favicon/favicon_32.png"
+				},{
+					"name": "iconarchive",
+					"title": "超过735000个免费图标。浏览类别，艺术家，流行度，日期图标。",
+					"link": "https://iconarchive.com/",
+					"icon": "https://iconarchive.com/favicon.ico"
+				},{
+					"name": "IconPark",
+					"title": "字节跳动开源图标库",
+					"link": "http://iconpark.bytedance.com/",
+					"icon": "https://sf1-scmcdn-tos.pstatp.com/obj/goofy/ad/bydesign/iconparksite/logo.svg"
+				},{
+					"name": "Worldvector Logo",
+					"title": "矢量标志下载网站，可以下载各行各业的矢量Logo标志。",
+					"link": "https://worldvectorlogo.com/",
+					"icon": "https://worldvectorlogo.com/static/img/favicon.ico"
+				},{
+					"name": "Easyicon",
+					"title": "提供超过六十万个SVG、PNG、ICO、ICNS图标搜索、图标下载服务。",
+					"link": "https://www.easyicon.net/",
+					"icon": "https://www.easyicon.net/favicon.ico"
+				},{
+					"name": "iconmonstr",
+					"title": "一位德国从事图标设计的设计师创建（免费）",
+					"link": "https://iconmonstr.com/",
+					"icon": "https://cdns.iconmonstr.com/wp-content/themes/iconmonstr/assets/ico/2.0.0/favicon.ico"
+				},{
+					"name": "icooon-mono",
+					"title": "来自日本的免费单色图标库",
+					"link": "https://icooon-mono.com/?lang=en",
+					"icon": "https://icooon-mono.com/fab/favicon.ico"
+				},{
+					"name": "免费火柴人",
+					"title": "日本的免费火柴人图标，搜索词可以是英文和日文",
+					"link": "http://pictogram2.com/",
+					"icon": "https://pictogram2.com/favicon.ico"
+				},{
+					"name": "扁平化图标",
+					"title": "日本的扁平化矢量图标，免费可商用",
+					"link": "http://flat-icon-design.com/",
+					"icon": "http://flat-icon-design.com/fab/favicon.ico"
+				},{
+					"name": "silhouette-ac",
+					"title": "支持中文搜索，日本大阪的免费矢量图库",
+					"link": "https://silhouette-ac.com/",
+					"icon": "https://static.photo-ac.com/static/ico/favicon.silhouette_ac.png"
+				},{
+					"name": "矢量Logo下载",
+					"title": "知名Logo矢量资源下载",
+					"link": "https://worldvectorlogo.com/",
+					"icon": "https://worldvectorlogo.com/static/img/favicon.ico"
+				},{
+					"name": "品牌Logo搜索",
+					"title": "下载页面无法打开",
+					"link": "http://instantlogosearch.com/",
+					"icon": "https://instantlogosearch.com/favicon.ico"
+				},{
+					"name": "Logopond",
+					"title": "设计logo前看一看，找下灵感很不错",
+					"link": "https://logopond.com/",
+					"icon": "https://logopond.com/favicon.ico"
+				},{
+					"name": "60 Logo",
+					"title": "品牌的矢量 Logo 图标",
+					"link": "https://www.60logo.com/list",
+					"icon": "https://www.60logo.com/favicon.ico"
+				},{
+					"name": "Logo设计",
+					"title": "几分钟内制作您的徽标",
+					"link": "https://app.brandmark.io/v2/",
+					"icon": "https://app.brandmark.io/favicon32.gif"
+				},{
+					"name": "Flaticon",
+					"title": "【推荐】超级好用的矢量图标库",
+					"link": "https://www.flaticon.com/",
+					"icon": "https://www.flaticon.com/favicon.ico"
+				},{
+					"name": "awesome-design-cn",
+					"title": "由伯乐在线资源频道综合整理。包含：ICON图标、Logo设计、PhotoShop插件、交互设计工具、流程图、线框图/原型图、设计博客、设计工具设计教程、设计素材、配色方案、高清图库等等",
+					"link": "https://github.com/jobbole/awesome-design-cn",
+					"icon": "https://github.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t3",
+			"tab_title": "字体",
+			"link_items": [{
+					"name": "免费可商用字体",
+					"title": "免费可商用字体合集，高质量的免费商用字体都在这了！",
+					"link": "http://www.epinv.com/mianfeiziti/",
+					"icon": "http://www.epinv.com/favicon.ico"
+				},{
+					"name": "千千秀字",
+					"title": "千千秀字是一个文字主题网站，在于了解和学习文字这一文化载体和文字艺术应用。提供文字翻译、字体转换、字效生成等在线服务的同时，也关注着文字的历史和文字的各行应用。",
+					"link": "https://www.qqxiuzi.cn/",
+					"icon": "https://www.qqxiuzi.cn/favicon.ico"
+				},{
+					"name": "字客网",
+					"title": "知名的字体下载与分享网站,还提供找字体，字体识别等服务。",
+					"link": "https://www.fontke.com/",
+					"icon": "https://www.fontke.com/favicon.ico"
+				},{
+					"name": "查字体版权-360",
+					"title": "查字体的版权，免纠纷",
+					"link": "https://fonts.safe.360.cn/",
+					"icon": "https://p2.ssl.qhimg.com/t014de4ba13ada26743.png"
+				},{
+					"name": "求字体",
+					"title": "找字体的神器，上传字体识别",
+					"link": "http://www.qiuziti.com/",
+					"icon": "http://www.qiuziti.com/image/icon.ico"
+				},{
+					"name": "免费商用-猫啃网",
+					"title": "免费商用中文字体下载！",
+					"link": "https://www.maoken.com/all-fonts",
+					"icon": "https://www.maoken.com/favicon.ico"
+				},{
+					"name": "免费商用-100font",
+					"title": "专门收集整理“免费商用字体”的网站",
+					"link": "https://www.100font.com/",
+					"icon": "https://www.100font.com/view/img/favicon.ico"
+				},{
+					"name": "免费商用-字由",
+					"link": "https://www.hellofont.cn/font-list?tag=73",
+					"icon": "https://www.hellofont.cn/favicon.ico"
+				},{
+					"name": "字体天下",
+					"title": "商用免费的中文字体",
+					"link": "http://www.fonts.net.cn/commercial-free-32767/fonts-zh-1.html",
+					"icon": "https://www.fonts.net.cn/favicon.ico"
+				},{
+					"name": "字魂",
+					"title": "提供商用字体下载授权",
+					"link": "https://izihun.com/",
+					"icon": "https://izihun.com/favicon.ico"
+				},{
+					"name": "字体下载-优设",
+					"link": "https://www.uisdc.com/category/hot-download/fonts-download",
+					"icon": "https://www.uisdc.com/favicon.ico"
+				},{
+					"name": "英文-fontsup",
+					"title": "免费字体下载",
+					"link": "https://fontsup.com/",
+					"icon": "https://fontsup.com/favicon.ico"
+				},{
+					"name": "字体传奇",
+					"link": "http://www.ziticq.com/",
+					"icon": "http://www.ziticq.com/favicon.ico"
+				},{
+					"name": "站长字体",
+					"link": "http://font.chinaz.com/",
+					"icon": "http://www.chinaz.com/favicon.ico"
+				},{
+					"name": "Fontex",
+					"title": "免费用于商业用途的字体下载",
+					"link": "http://www.fontex.org/",
+					"icon": "http://www.fontex.org/images/favicon.png"
+				},{
+					"name": "字体之家",
+					"link": "http://www.17ziti.com/",
+					"icon": "http://www.17ziti.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t4",
+			"tab_title": "开发者社区",
+			"link_items": [{
+					"name": "开源中国",
+					"title": "OSCHINA - 中文开源技术交流社区",
+					"link": "https://www.oschina.net/",
+					"icon": "https://www.oschina.net/favicon.ico"
+				},{
+					"name": "博客园",
+					"title": "博客园 - 开发者的网上家园",
+					"link": "https://www.cnblogs.com/",
+					"icon": "https://www.cnblogs.com/favicon.ico"
+				},{
+					"name": "CSDN",
+					"title": "全球知名中文IT技术交流平台",
+					"link": "https://www.csdn.net/",
+					"icon": "https://g.csdnimg.cn/static/logo/favicon32.ico"
+				},{
+					"name": "MSDN中文",
+					"title": "面向开发人员和技术专业人员的 Microsoft 文档和学习主页。",
+					"link": "https://docs.microsoft.com/zh-cn/",
+					"icon": "https://microsoft.com/favicon.ico"
+				},{
+					"name": "MSDN中文",
+					"title": "面向开发人员和技术专业人员的 Microsoft 文档和学习主页。",
+					"link": "https://docs.microsoft.com/zh-cn/",
+					"icon": "https://microsoft.com/favicon.ico"
+				},{
+					"name": ".NET 官网",
+					"link": "https://dotnet.microsoft.com/",
+					"icon": "https://microsoft.com/favicon.ico"
+				},{
+					"name": "MSDN中文",
+					"title": "创意工作者的社区。讨论编程、设计、硬件、游戏等令人激动的话题。",
+					"link": "https://www.v2ex.com/",
+					"icon": "hthttps://www.v2ex.com/favicon.ico"
+				},{
+					"name":"jQuery插件库",
+					"title":"收集jQuery插件和提供各种jQuery特效的详细使用方法,在线预览，jQuery插件下载及教程",
+					"link":"https://www.jq22.com/",
+					"icon":"https://www.jq22.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t5",
+			"tab_title": "开发者工具",
+			"link_items": [{
+					"name": "Github",
+					"title": "国外代码托管协作平台，已开放私有仓库，免费使用的功能受限",
+					"link": "https://github.com/",
+					"icon": "https://github.com/favicon.ico"
+				},{
+					"name": "码云Gitee",
+					"title": "国内的代码托管协作平台，速度快无屏蔽",
+					"link": "https://gitee.com/",
+					"icon": "https://gitee.com/favicon.ico"
+				},{
+					"name": "git大全",
+					"title": "推荐的git学习资源的大全",
+					"link": "https://gitee.com/all-about-git",
+					"icon": "https://gitee.com/favicon.ico",
+					"mark": "hot"
+				},{
+					"name": "码云Gitee",
+					"title": "国内的代码托管协作平台，速度快无屏蔽",
+					"link": "https://gitee.com/",
+					"icon": "https://gitee.com/favicon.ico"
+				},{
+					"name": "GitLab",
+					"title": "国外代码托管协作平台，速度慢，访问不稳定，对国人不友好",
+					"link": "https://about.gitlab.com/",
+					"icon": "https://about.gitlab.com/favicon.ico"
+				},{
+					"name": "Bitbucket",
+					"title": "国外一家源代码托管网站，采用 Mercurial/Git 做为分布式版本控制系统",
+					"link": "https://bitbucket.org/",
+					"icon": "https://bitbucket.org/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t6",
+			"tab_title": "教程",
+			"link_items":[
+				{
+					"name":"廖雪峰的官方网站",
+					"title":"研究互联网产品和技术，提供原创中文精品教程",
+					"link":"https://www.liaoxuefeng.com/",
+					"icon":"https://www.liaoxuefeng.com/favicon.ico"
+				},{
+					"name":"W3School",
+					"title":"在 W3School，你可以找到你所需要的所有的网站建设教程。从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。",
+					"link":"https://www.w3school.com.cn/",
+					"icon":"https://www.w3school.com.cn/ui2019/logo-32-red.png"
+				},{
+					"name": "正则表达式",
+					"title": "权威的正则表达式教程",
+					"link": "http://www.regexlab.com/zh/regref.htm",
+					"mark": "new"
+				},{
+					"name": "正则表达式入门",
+					"title": "简明的正则表达式手册",
+					"link": "https://deerchao.cn/tutorials/regex/regex.htm",
+					"icon": "https://deerchao.cn/images/regex.ico",
+					"mark": "new"
+				},{
+					"name": "Redis命令参考",
+					"link": "http://doc.redisfans.com/"
+				},{
+					"name": "Wiki Shileizcc",
+					"title": "各类工具的详细的使用手册，包括Nginx、Redis、Git、MySQL等",
+					"link": "http://wiki.shileizcc.com/",
+					"icon": "http://wiki.shileizcc.com/confluence/s/-7w6ft3/8506/5d4cfda2b837dbf77e088aa916d969d565373c86/46/_/favicon.ico",
+					"mark": "new"
+				}
+			]
+		}
+	]
+}

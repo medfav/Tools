@@ -1,0 +1,371 @@
+{
+	"group_id": "g2",
+	"active_tab": "t1",
+	"group_icon": "el-icon-star-off",
+	"group_name": "生活休闲",
+	"tabs": [{
+			"tab_index": "t1",
+			"tab_title": "壁纸",
+			"link_items": [{
+					"name": "Wallhaven",
+					"title": "网上最好的壁纸！",
+					"link": "https://wallhaven.cc/",
+					"icon": "https://wallhaven.cc/favicon.ico",
+					"mark": "hot"
+				},{
+					"name": "图虫",
+					"title": "优质摄影师交流社区",
+					"link": "https://tuchong.com/",
+					"icon": "https://tuchong.com/favicon.ico"
+				},{
+					"name": "堆糖",
+					"title": "堆糖，美图壁纸兴趣社区。",
+					"link": "https://www.duitang.com/",
+					"icon": "https://www.duitang.com/favicon.ico"
+				},{
+					"name": "花瓣",
+					"title": "花瓣，陪你做生活的设计师",
+					"link": "https://huaban.com/",
+					"icon": "https://huaban.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t2",
+			"tab_title": "资讯",
+			"link_items": [{
+					"name": "Readhub",
+					"link": "https://readhub.cn/topics",
+					"icon": "https://cdn.readhub.cn/static/assets/png/readhub_logo.95007f61.png"
+				},{
+					"name": "IT之家",
+					"title": "数码，科技，生活",
+					"link": "https://www.ithome.com/",
+					"icon": "https://www.ithome.com/favicon.ico"
+				},{
+					"name": "步行街-虎扑",
+					"link": "https://bbs.hupu.com/all-gambia",
+					"icon": "https://w1.hoopchina.com.cn/images/pc/old/favicon.ico"
+				},{
+					"name": "在线报刊",
+					"title": "在线全国报纸、杂志大全",
+					"link": "http://www.53bk.com/baokan/",
+					"icon": "http://www.53bk.com/favicon.ico"
+				},{
+					"name": "奇客Solidot",
+					"title": "主要面对开源自由软件和关心科技资讯读者群",
+					"link": "https://www.solidot.org/",
+					"icon": "https://www.solidot.org/favicon.ico"
+				},{
+					"name": "抽屉新热榜",
+					"link": "https://dig.chouti.com/zone/news",
+					"icon": "https://dig.chouti.com/images/favicon-d38b877458.png"
+				},{
+					"name": "今日热榜",
+					"title": "聚合多个热榜",
+					"link": "https://tophub.today/",
+					"icon": "https://tophub.today/favicon.ico"
+				},{
+					"name": "cnBeta",
+					"title": "互联网IT新闻业界的后起之秀",
+					"link": "https://www.cnbeta.com/",
+					"icon": "https://www.cnbeta.com/favicon.ico"
+				},{
+					"name": "少数派",
+					"title": "高效工作，品质生活",
+					"link": "https://sspai.com/",
+					"icon": "https://cdn.sspai.com/sspai/assets/img/favicon/icon.ico"
+				},{
+					"name": "鱼塘热榜",
+					"title": "聚合每日热门、搞笑、有趣资讯",
+					"link": "https://mo.fish/",
+					"icon": "https://mo.fish/fish.ico"
+				},{
+					"name": "瓦斯阅读",
+					"title": "聚合优质的商业科技资讯",
+					"link": "https://qnmlgb.tech/",
+					"icon": "https://cdn.qnmlgb.tech/picloud/20200507023626_Gwjt0S.png"
+				},{
+					"name": "36氪",
+					"link": "https://36kr.com/",
+					"icon": "https://36kr.com/favicon.ico"
+				},{
+					"name": "梅花网",
+					"title": "营销作品宝库",
+					"link": "https://www.meihua.info/",
+					"icon": "https://www.meihua.info/static/images/icon/meihua.ico"
+				}
+			]
+		},{
+			"tab_index": "t3",
+			"tab_title": "论坛社区",
+			"link_items": [{
+					"name": "数码之家",
+					"title": "数码之家论坛-最具人气的拆机DIY社区",
+					"link": "https://www.mydigit.cn/forum.php",
+					"icon": "https://www.mydigit.cn/favicon.ico"
+				},{
+					"name": "知乎",
+					"title": "数码之家论坛-最具人气的拆机DIY社区",
+					"link": "https://www.zhihu.com/explore",
+					"icon": "https://www.zhihu.com/favicon.ico"
+				},{
+					"name": "豆瓣",
+					"title": "提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。",
+					"link": "https://www.douban.com/",
+					"icon": "https://www.douban.com/favicon.ico"
+				},{
+					"name": "新浪微博",
+					"link": "https://weibo.com/",
+					"icon": "https://weibo.com/favicon.ico"
+				},{
+					"name": "简书",
+					"title": "简书是一个优质的创作社区",
+					"link": "https://www.jianshu.com/",
+					"icon": "https://www.jianshu.com/favicon.ico"
+				},{
+					"name": "Lofter",
+					"title": "优质的图片社交",
+					"link": "https://www.lofter.com/view",
+					"icon": "https://www.lofter.com/favicon.ico"
+				},{
+					"name": "QQ空间",
+					"title": "QQ用户的网上家园",
+					"link": "https://qzone.qq.com/",
+					"icon": "https://qzone.qq.com/favicon.ico"
+				},{
+					"name": "chiphell",
+					"title": "分享与交流用户体验的平台",
+					"link": "https://www.chiphell.com/",
+					"icon": "https://www.chiphell.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t4",
+			"tab_title": "博客资源",
+			"link_items": [{
+					"name": "如有乐享",
+					"title": "专注分享各种使用教程，优惠福利，技术手段，羊毛信息。",
+					"link": "https://51.ruyo.net/",
+					"icon": "https://51.ruyo.net/favicon.ico"
+				},{
+					"name": "挖站否",
+					"title": "分享建站教程、建站资源以及各类经验与技巧",
+					"link": "https://wzfou.com/",
+					"icon": "https://wzfou.cdn.bcebos.com/wp-content/uploads/2018/07/cropped-wzfoulogo-32x32.png"
+				},{
+					"name": "有趣网址之家",
+					"title": "分享有趣的国内外网站&应用新奇的html5网站",
+					"link": "http://youquhome.com/",
+					"icon": "https://youquhome.com/favicon.ico"
+				},{
+					"name": "白云居",
+					"title": "『白云居』-世道秋风总萧索，何如高卧白云居",
+					"link": "https://baiyunju.cc/",
+					"icon": "https://baiyunju.cc/wp-content/uploads/2020/07/cropped-站点图标-32x32.png"
+				},{
+					"name": "福利吧",
+					"title": "福利吧是一个分享福利的平台，通过本站将一些好玩的、好看的、新鲜资讯分享给大家。",
+					"link": "https://fuliba2020.net/",
+					"icon": "https://fuliba2020.net/favicon.ico"
+				},{
+					"name": "免费吧",
+					"title": "免费吧分享互联网-分享精品免费资源",
+					"link": "https://www.mianfeib.me/"
+				},{
+					"name": "VIP部落",
+					"title": "VIP账号共享",
+					"link": "http://www.vipbuluo.com/"
+				},{
+					"name":"阮一峰个人网站",
+					"title":"阮一峰的个人网站，网络博客分享技术文章和科技新闻",
+					"link":"http://www.ruanyifeng.com/blog/",
+					"icon":"https://www.ruanyifeng.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t5",
+			"tab_title": "财经",
+			"link_items": [{
+					"name": "东方财富网",
+					"title": "专业的互联网财经媒体",
+					"link": "https://www.eastmoney.com/",
+					"icon": "https://www.eastmoney.com/favicon.ico"
+				},{
+					"name": "天天基金网",
+					"title": "东方财富网旗下基金平台!",
+					"link": "http://1234567.com.cn/",
+					"icon": "http://1234567.com.cn/favicon.ico"
+				},{
+					"name": "雪球",
+					"title": "一个投资者的社交网络",
+					"link": "https://xueqiu.com/",
+					"icon": "https://xueqiu.com/favicon.ico"
+				},{
+					"name": "新浪财经",
+					"link": "https://finance.sina.com.cn/",
+					"icon": "http://finance.sina.com.cn/favicon.ico"
+				},{
+					"name": "搜狐财经",
+					"link": "https://business.sohu.com/",
+					"icon": "https://business.sohu.com/favicon.ico"
+				},{
+					"name": "凤凰财经",
+					"link": "http://finance.ifeng.com/",
+					"icon": "http://finance.ifeng.com/favicon.ico"
+				},{
+					"name": "网易财经",
+					"link": "https://money.163.com/",
+					"icon": "https://money.163.com/favicon.ico"
+				},{
+					"name": "中国金融网",
+					"title": "中国金融领域的网上新闻、信息中心",
+					"link": "http://www.financeun.com/",
+					"icon": "https://wwwcdn.financeun.com/public/static/page/images/logo_title.png"
+				}
+			]
+		},{
+			"tab_index": "t6",
+			"tab_title": "购物",
+			"link_items": [{
+					"name": "京东",
+					"title": "京东",
+					"link": "https://www.jd.com/",
+					"icon": "https://www.jd.com/favicon.ico"
+				},{
+					"name": "淘宝",
+					"title": "淘！我喜欢",
+					"link": "https://www.taobao.com/",
+					"icon": "https://www.taobao.com/favicon.ico"
+				},{
+					"name": "天猫",
+					"title": "理想生活上天猫",
+					"link": "https://www.tmall.com/",
+					"icon": "https://www.tmall.com/favicon.ico"
+				},{
+					"name": "苏宁易购",
+					"title": "天天低价",
+					"link": "https://www.suning.com/",
+					"icon": "https://www.suning.com/favicon.ico"
+				},{
+					"name": "唯品会",
+					"title": "品牌特卖",
+					"link": "https://www.vip.com/",
+					"icon": "https://www.vip.com/favicon.ico"
+				},{
+					"name": "数码之家",
+					"title": "数码交易区",
+					"link": "https://www.mydigit.cn/forum.php?mod=forumdisplay&fid=36",
+					"icon": "https://www.mydigit.cn/favicon.ico"
+				},{
+					"name": "当当",
+					"link": "https://www.dangdang.com/",
+					"icon": "https://www.dangdang.com/favicon.ico"
+				},{
+					"name": "美团",
+					"link": "https://www.meituan.com/",
+					"icon": "https://www.meituan.com/favicon.ico"
+				},{
+					"name": "亚马逊 - 中国",
+					"title": "国际网购平台「亚马逊」中国站",
+					"link": "https://www.amazon.cn/",
+					"icon": "https://www.amazon.cn/favicon.ico"
+				},{
+					"name": "大众点评",
+					"link": "https://www.dianping.com/",
+					"icon": "https://www.dpfile.com/app/pc-common/dp_favicon.ico"
+				},{
+					"name": "什么值得买",
+					"title": "好玩的开箱晒物、最实用的购物攻略、评测报告，为大家提供消费决策",
+					"link": "https://post.smzdm.com/",
+					"icon": "https://post.smzdm.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t7",
+			"tab_title": "直播",
+			"link_items": [{
+					"name": "企鹅电竞",
+					"title": "企鹅电竞",
+					"link": "https://egame.qq.com/",
+					"icon": "https://egame.qq.com/favicon.ico"
+				},{
+					"name": "斗鱼直播",
+					"title": "斗鱼直播",
+					"link": "https://www.douyu.com/",
+					"icon": "https://www.douyu.com/favicon.ico"
+				},{
+					"name": "虎牙直播",
+					"title": "虎牙直播",
+					"link": "https://www.huya.com/",
+					"icon": "https://www.huya.com/favicon.ico"
+				}
+			]
+		},{
+			"tab_index": "t8",
+			"tab_title": "游戏",
+			"link_items": [{
+					"name": "indienova",
+					"title": "新闻，评测，开发教学",
+					"link": "https://indienova.com/",
+					"icon": "https://indienova.com/favicon.ico"
+				},{
+					"name": "腾讯云游戏",
+					"title": "免费，延迟不高，云游戏平台；报名体验，容易通过",
+					"link": "https://start.qq.com/",
+					"icon": "https://start.qq.com/favicon.ico"
+				},{
+					"name": "网易云游戏",
+					"title": "不用下载及安装，点开就玩，云游戏平台，限时收费等措施开始增加",
+					"link": "https://cg.163.com/",
+					"icon": "https://cg.163.com/favicon.ico"
+				},{
+					"name": "达龙云电脑",
+					"title": "游戏种类较多，云游戏",
+					"link": "https://www.dalongyun.com/",
+					"icon": "https://www.dalongyun.com/favicon.ico"
+				},{
+					"name": "斗鱼云游戏",
+					"title": "免费的云游戏",
+					"link": "https://cloudgame.douyu.com/",
+					"icon": "https://sta-op.douyucdn.cn/front-publish/cloud-game-center-master/favicon.ico"
+				},{
+					"name": "虎牙云游戏",
+					"title": "免费云游戏平台",
+					"link": "https://yowa.huya.com/",
+					"icon": "https://yowa.huya.com/img/favicon.ico"
+				},{
+					"name": "小霸王在线",
+					"title": "找回童年的游戏快乐时光",
+					"link": "https://www.yikm.net/",
+					"icon": "https://www.yikm.net/f.png"
+				},{
+					"name": "在线DOS游戏",
+					"title": "在浏览器中在线游玩 DOS 游戏和下载 DOS 游戏",
+					"link": "https://dos.zczc.cz/",
+					"icon": "https://dos.zczc.cz/static/icon/favicon.ico"
+				},{
+					"name": "游戏博物馆",
+					"link": "http://www.sea187.com/dev/pc/"
+				},{
+					"name": "GBT乐赏游戏空间",
+					"title": "GBT小组主要以最新最快的优秀PC游戏为主，以收藏为核心制作精品Game",
+					"link": "http://gbtgame.ys168.com/",
+					"icon": "http://ys168.com/favicon.ico"
+				},{
+					"name": "单机游戏-吾爱",
+					"link": "https://www.52pojie.cn/forum.php?mod=collection&action=view&ctid=1776",
+					"icon": "https://www.52pojie.cn/favicon.ico"
+				},{
+					"name": "i玩游戏",
+					"title": "登录密码：49423",
+					"link": "http://danji.029815.cn/yxvip.html",
+					"icon": "http://danji.029815.cn/favicon.ico"
+				},{
+					"name": "家用游戏博物馆",
+					"title": "失落的国产掌机",
+					"link": "http://www.famicn.com/"
+				}
+			]
+		}
+	]
+}
