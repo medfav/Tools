@@ -16,7 +16,7 @@ var Main = {
             config:{
               logo_img: true,
               // logo_img_url:"./img/logo.png",
-              logo_img_url:"https://cdn.jsdelivr.net/gh/medfav/MyPage/docs/webnav/img/logo.png",
+              logo_img_url:"https://cdn.jsdelivr.net/gh/medfav/MyPage@master/docs/webnav/img/logo.png",
               logo_text: "网址导航",
               // data_source: "./data/tabData/tabs_framework.json",
               data_source: "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs_framework.json",
