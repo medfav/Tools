@@ -29,22 +29,30 @@
 <body>
     <div id="app">
         <template>
-            <el-row>
+			<el-row class="header">
+			    <el-col :xs="1" :sm="1"  :md="2" :lg="3" :xl="4"></el-col>
+			    <el-col :xs="22" :sm="22" :md="20" :lg="18" :xl="16">
+			        <el-container>
+			            <el-header>
+			                <div class="logo">
+			                    <a href="./">
+			                        <img v-show="config.logo_img" :src="config.logo_img_url">
+			                        <span v-show="!config.logo_img">{{config.logo_text}}</span>
+			                    </a>
+			                </div>
+			                <div class="searchbtn">
+			                    <p><el-button type="primary" @click="searchButton(item.id)" :icon="item.icon" v-for="(item,index) in config.search_config" :key="index">{{item.name}}</el-button></p>
+			                    <p><el-autocomplete class="inline-input" v-model="searchbox_value" :fetch-suggestions="querySearch" placeholder="请输入搜索内容，默认使用百度搜索" :trigger-on-focus="false" :select-when-unmatched="true" @select="handleSelect" :highlight-first-item="true" clearable></el-autocomplete></p>
+			                </div>
+			            </el-header>
+			        </el-container>
+			    </el-col>
+			    <el-col :xs="1" :sm="1"  :md="2" :lg="3" :xl="4"></el-col>
+			</el-row>
+            <el-row class="main">
                 <el-col :xs="1" :sm="1"  :md="2" :lg="3" :xl="4"></el-col>
                 <el-col :xs="22" :sm="22" :md="20" :lg="18" :xl="16">
                     <el-container>
-                        <el-header>
-                            <div class="logo">
-                                <a href="./">
-                                    <img v-show="config.logo_img" :src="config.logo_img_url">
-                                    <span v-show="!config.logo_img">{{config.logo_text}}</span>
-                                </a>
-                            </div>
-                            <div class="searchbtn">
-                                <p><el-button type="primary" @click="searchButton(item.id)" :icon="item.icon" v-for="(item,index) in config.search_config" :key="index">{{item.name}}</el-button></p>
-                                <p><el-autocomplete class="inline-input" v-model="searchbox_value" :fetch-suggestions="querySearch" placeholder="请输入搜索内容，默认使用百度搜索" :trigger-on-focus="false" :select-when-unmatched="true" @select="handleSelect" :highlight-first-item="true" clearable></el-autocomplete></p>
-                            </div>
-                        </el-header>
                         <el-main >
                             <div v-show="tab_groups=='undifine'||tab_groups.length==0" class="loading">
                                 <i class="el-icon-loading"></i><br>

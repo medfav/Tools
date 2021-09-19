@@ -41,8 +41,16 @@ html:hover{
 div.el-row{
     min-width: 610px; 
 }
+div.main.el-row{
+	min-height: calc(100vh - 175px);
+}
+div.footbar.el-row{
+	background-color: #484848;
+	margin-top: 30px;
+}
 .el-col{
     min-height: 1px;
+	/* padding: 0 3px; */
 }
 .el-header,.el-header>.logo,.el-header .logo span {
     min-height: 1px;
@@ -134,7 +142,7 @@ div.el-tabs__item.is-active{
     border-bottom: 1px solid #e54348;
 }
 .tab-title>.el-tabs--border-card {
-    box-shadow: unset;
+    /* box-shadow: unset; */
 }
 .tab-title .el-tabs__nav>.el-tabs__item {
     margin-top: 0px;
@@ -151,7 +159,13 @@ div.el-tabs__item.is-active{
     color: #e54348;
 }
 div.el-tabs{
-    padding: 20px 0px 0px 0px;
+    /* padding: 20px 0px 0px 0px; */
+	box-shadow: unset;
+	border: none;
+	margin: 20px 3px 40px 3px;
+	/* box-shadow: 2px 2px 2px -1px #efc6c6, -2px 2px 2px -1px #efc6c6,2px -2px 2px -1px #efc6c6, -2px 2px 2px -1px #efc6c6; */
+	box-shadow: 2px 2px 2px -1px #d8d8d8, -2px 2px 2px -1px #d8d8d8,2px -2px 2px -1px #d8d8d8, -2px 2px 2px -1px #d8d8d8;
+	border-radius: 4px;
 }
 div.el-tabs--border-card {
     border: none;
@@ -160,27 +174,27 @@ main.el-main{
     padding: 0px;
 }
 .el-tabs>div.el-tabs__content{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 5px 10px;
 }
 div.link-content > div {
     color: #6d6d6d;
     display: inline-flex;
-    padding: 1px;
+    padding: 5px 1px;
     margin: 2px;
     margin-right: 10px;
     margin-bottom: 7px;
     width: 12.717%;
     min-width: 114px;
-    max-width: 144px;
+    max-width: 143px;
     height: 22px;
     line-height: 22px;
-    text-align: center;
-    border: solid 1px #ffc3c4;
+    /* text-align: center; */
+    /* border: solid 1px #ffc3c4; */
     /* border-radius: 18px; */
     font-size: 13px;
 }
 div.link-content .el-badge {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 100%;
 }
 div.link-content a {
