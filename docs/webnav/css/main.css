@@ -61,6 +61,7 @@ div.footbar.el-row{
     font-size: x-large;
     color: #e54348;
     padding: 0px;
+	margin: 2px 5px 5px 5px;
 }
 .el-header>div.searchbtn{
     display: block;
@@ -162,7 +163,7 @@ div.el-tabs{
     /* padding: 20px 0px 0px 0px; */
 	box-shadow: unset;
 	border: none;
-	margin: 20px 3px 40px 3px;
+	margin: 20px 5px 40px 5px;
 	/* box-shadow: 2px 2px 2px -1px #efc6c6, -2px 2px 2px -1px #efc6c6,2px -2px 2px -1px #efc6c6, -2px 2px 2px -1px #efc6c6; */
 	box-shadow: 2px 2px 2px -1px #d8d8d8, -2px 2px 2px -1px #d8d8d8,2px -2px 2px -1px #d8d8d8, -2px 2px 2px -1px #d8d8d8;
 	border-radius: 4px;
