@@ -8,9 +8,9 @@ html,body,div,p,span{
     outline: 0;
 }
 /* 滚动条样式 开始 */
-html{
+/* html{
     overflow: hidden;
-}
+} */
 html:hover{
     overflow: overlay;
 }
