@@ -42,7 +42,7 @@ div.el-row{
     min-width: 625px; 
 }
 div.main.el-row{
-	/* min-height: calc(100vh - 192px); */
+	min-height: calc(100vh - 192px);
 }
 div.footbar.el-row{
 	background-color: #484848;
