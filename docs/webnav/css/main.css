@@ -42,11 +42,11 @@ div.el-row{
     min-width: 610px; 
 }
 div.main.el-row{
-	min-height: calc(100vh - 175px);
+	min-height: calc(100vh - 192px);
 }
 div.footbar.el-row{
 	background-color: #484848;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .el-col{
     min-height: 1px;
