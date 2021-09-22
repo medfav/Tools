@@ -33,7 +33,8 @@ var Main = {
             // tab_items: [],
             source_info:{},
             tab_groups: [],
-            searchbox_value:""
+            searchbox_value:"",
+            keywords: ["QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="]
           };
     },
     watch: {
@@ -74,6 +75,9 @@ var Main = {
       searchButton:function(search_engines) {
           // document.querySelector(".el-autocomplete .el-input input").value;
           console.log(this.searchbox_value);
+          if(this.searchbox_value == this.keywords[0] || this.searchbox_value == this.keywords[1]) {
+            window.open("../mg");
+          }
           let searchurl = "";
           this.config.search_config.forEach((item)=>{
             if(item.id==search_engines){
@@ -164,6 +168,10 @@ var Main = {
         }
     },
     mounted: function() {
+      // 解码
+      this.keywords = this.keywords.map(item => {
+        return decodeURI(window.atob(item));
+      })
       // axios.get("/data/data.json")
       // .then(response => {
       //   this.tab_items = response.data;
