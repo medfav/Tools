@@ -19,10 +19,10 @@ var Main = {
               logo_img_url:"https://cdn.jsdelivr.net/gh/medfav/MyPage@master/docs/webnav/img/logo.png",
               logo_text: "网址导航",
               // data_source: "./data/tabData/tabs_framework.json",
-              data_source: "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs_framework.json",
-              // data_source: "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json",
+              data_source: "https://mockapi.eolink.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs_framework.json",
+              // data_source: "https://mockapi.eolink.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json",
               // config_url: "./data/config.json",
-              config_url: "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
+              config_url: "https://mockapi.eolink.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
               default_search:"baidu",
               search_config:[],
             },
@@ -180,7 +180,7 @@ var Main = {
       this.getConfig(this.config.config_url);
       // 页面获取框架信息
       this.getTabFrameworkData(this.config.data_source);
-      // axios.get("https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json")
+      // axios.get("https://mockapi.eolink.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json")
       // .then(response => {
       //   this.tab_groups = response.data;
       // })
