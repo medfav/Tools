@@ -1,69 +1,66 @@
 {
-	"group_id": "g4",
-	"active_tab": "t1",
-	"group_icon": "el-icon-film",
-	"group_name": "影视欣赏",
-	"tabs": [{
-			"tab_index": "t1",
-			"tab_title": "在线",
-			"link_items": [{
-					"name": "腾讯视频",
-					"link": "https://v.qq.com/",
-					"icon": "https://v.qq.com/favicon.ico"
-				},{
-					"name": "爱奇艺",
-					"link": "https://www.iqiyi.com/",
-					"icon": "https://www.iqiyi.com/favicon.ico"
-				},{
-					"name": "乐视视频",
-					"link": "http://www.le.com/",
-					"icon": "http://www.le.com/favicon.ico"
-				},{
-					"name": "哔哩哔哩",
-					"title": "国内知名的视频弹幕网站",
-					"link": "https://www.bilibili.com/",
-					"icon": "https://www.bilibili.com/favicon.ico"
-				},{
-					"name": "CCTV节目官网",
-					"title": "CCTV节目官网是中央电视台电视节目官方呈现平台，提供央视19个频道的直播、点播、节目预告等服务",
-					"link": "https://tv.cctv.com/",
-					"icon": "https://tv.cctv.com/favicon.ico"
-				},{
-					"name": "优酷",
-					"link": "https://youku.com/",
-					"icon": "https://img.alicdn.com/tfs/TB1WeJ9Xrj1gK0jSZFuXXcrHpXa-195-195.png"
-				},{
-					"name": "英雄联盟赛事",
-					"title":"英雄联盟赛事资讯与各类大型赛事直播尽在英雄联盟赛事官方网站（lpl.qq.com）",
-					"link": "https://lpl.qq.com/",
-					"icon": "https://lpl.qq.com/favicon.ico"
-				}
-			]
-		},{
-			"tab_index": "t2",
-			"tab_title": "下载",
-			"link_items": [{
-				"name": "磁力星球",
-				"title": "BT资源搜索",
-				"link": "https://www.cilixingqiu.com/",
-				"icon": "https://www.cilixingqiu.com/img/favicon.ico"
-			}]
-		},{
-			"tab_index": "t3",
-			"tab_title": "动漫",
-			"link_items": []
-		},{
-			"tab_index": "t4",
-			"tab_title": "美剧",
-			"link_items": []
-		},{
-			"tab_index": "t5",
-			"tab_title": "日剧",
-			"link_items": []
-		},{
-			"tab_index": "t6",
-			"tab_title": "纪录片",
-			"link_items": []
-		}
-	]
+    "group_id": "g4",
+    "active_tab": "t1",
+    "group_icon": "el-icon-film",
+    "group_name": "影视欣赏",
+    "tabs": [{
+        "tab_index": "t1",
+        "tab_title": "在线",
+        "link_items": [{
+            "name": "腾讯视频",
+            "link": "https://v.qq.com/",
+            "icon": "https://v.qq.com/favicon.ico"
+        }, {
+            "name": "爱奇艺",
+            "link": "https://www.iqiyi.com/",
+            "icon": "https://www.iqiyi.com/favicon.ico"
+        }, {
+            "name": "乐视视频",
+            "link": "http://www.le.com/",
+            "icon": "http://www.le.com/favicon.ico"
+        }, {
+            "name": "哔哩哔哩",
+            "title": "国内知名的视频弹幕网站",
+            "link": "https://www.bilibili.com/",
+            "icon": "https://www.bilibili.com/favicon.ico"
+        }, {
+            "name": "CCTV节目官网",
+            "title": "CCTV节目官网是中央电视台电视节目官方呈现平台，提供央视19个频道的直播、点播、节目预告等服务",
+            "link": "https://tv.cctv.com/",
+            "icon": "https://tv.cctv.com/favicon.ico"
+        }, {
+            "name": "优酷",
+            "link": "https://youku.com/",
+            "icon": "https://img.alicdn.com/tfs/TB1WeJ9Xrj1gK0jSZFuXXcrHpXa-195-195.png"
+        }, {
+            "name": "英雄联盟赛事",
+            "title": "英雄联盟赛事资讯与各类大型赛事直播尽在英雄联盟赛事官方网站（lpl.qq.com）",
+            "link": "https://lpl.qq.com/",
+            "icon": "https://lpl.qq.com/favicon.ico"
+        }]
+    }, {
+        "tab_index": "t2",
+        "tab_title": "下载",
+        "link_items": []
+    }, {
+        "tab_index": "t3",
+        "tab_title": "动漫",
+        "link_items": [{
+            "name": "腾讯动漫",
+            "link": "https://v.qq.com/channel/cartoon",
+            "icon": "https://v.qq.com/favicon.ico"
+        }]
+    }, {
+        "tab_index": "t4",
+        "tab_title": "美剧",
+        "link_items": []
+    }, {
+        "tab_index": "t5",
+        "tab_title": "日剧",
+        "link_items": []
+    }, {
+        "tab_index": "t6",
+        "tab_title": "纪录片",
+        "link_items": []
+    }]
 }

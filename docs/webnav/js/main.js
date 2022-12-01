@@ -27,14 +27,23 @@ var Main = {
               search_config:[],
             },
             load_info:"正在加载数据......",
-            activeName: ['g1t1','g2t1'],
+            // activeName: ['g1t1','g2t1'],
             // all_items: [],
             // group_items: [],
             // tab_items: [],
             source_info:{},
             tab_groups: [],
-            searchbox_value:"",
-            keywords: ["QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="]
+            other_config: {
+              // 值为set-gray时，全页面置为黑白
+              set_gray: "set-gray",
+              keywords: ["QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="]
+            },
+            copyright: {
+              dates: "2020-2023",
+              domain: "www.medfav.com",
+              author_or_owner: "蓝天之约" 
+            },
+            searchbox_value:""
           };
     },
     watch: {
@@ -75,7 +84,7 @@ var Main = {
       searchButton:function(search_engines) {
           // document.querySelector(".el-autocomplete .el-input input").value;
           console.log(this.searchbox_value);
-          if(this.searchbox_value == this.keywords[0] || this.searchbox_value == this.keywords[1]) {
+          if(this.searchbox_value == this.other_config.keywords[0] || this.searchbox_value == this.other_config.keywords[1]) {
             window.open("../mg");
           }
           let searchurl = "";
@@ -169,7 +178,7 @@ var Main = {
     },
     mounted: function() {
       // 解码
-      this.keywords = this.keywords.map(item => {
+      this.other_config.keywords = this.other_config.keywords.map(item => {
         return decodeURI(window.atob(item));
       })
       // axios.get("/data/data.json")

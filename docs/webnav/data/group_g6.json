@@ -1,0 +1,44 @@
+{
+    "group_id": "g6",
+    "active_tab": "t1",
+    "group_icon": "el-icon-link",
+    "group_name": "网址导航",
+    "tabs": [{
+        "tab_index": "t1",
+        "tab_title": "综合",
+        "link_items": [{
+            "name": "龙轩导航",
+            "title": "做个有用的导航",
+            "link": "http://ilxdh.com/",
+            "icon": "http://ilxdh.com/favicon.ico"
+        }, {
+            "name": "北邮人导航",
+            "title": "北邮人常用的导航页，随时随地 Byr.wiki。一个框，全能搜！若打开缓慢，请访问简洁版 http://so.byr.wiki/",
+            "link": "http://byr.wiki/",
+            "icon": "http://byr.wiki/favicon.ico"
+        }, {
+            "name": "24k导航",
+            "link": "https://www.24kdh.com/",
+            "icon": "https://www.24kdh.com/wp-content/uploads/2020/07/201910021570016173270585-3.ico"
+        }, {
+            "name": "开发者博客(蓝天之约)",
+            "title": "开发者微博，欢迎反馈！",
+            "link": "https://www.medfav.tk/",
+            "icon": "https://cravatar.cn/avatar/2acacb6079bbe4f3e0a8e86782a4ba4a.png"
+        }, {
+            "name": "开发者微博(medfav)",
+            "title": "开发者微博，欢迎反馈！",
+            "link": "https://weibo.com/u/2564637030",
+            "icon": "https://weibo.com/favicon.ico"
+        }, {
+            "name": "Teemo提莫少女",
+            "link": "https://weibo.com/u/5710809888",
+            "icon": "https://tvax3.sinaimg.cn/crop.0.0.1002.1002.180/006etYwUly8ge1l0g4p49j30ru0ruadi.jpg"
+        }, {
+            "name": "我的资源",
+            "title": "我的小容量资源存储，速度比较慢，随时可能失效！",
+            "link": "http://www.bluesky.tk:1567/",
+            "icon": "http://www.bluesky.tk:1567/favicon.ico"
+        }]
+    }]
+}

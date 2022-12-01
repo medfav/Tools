@@ -1,34 +1,94 @@
 {
-	"group_id": "g5",
-	"active_tab": "t1",
-	"group_icon": "el-icon-link",
-	"group_name": "网址导航",
-	"tabs": [{
-		"tab_index": "t1",
-		"tab_title": "综合",
-		"link_items": [{
-				"name": "龙轩导航",
-				"title": "做个有用的导航",
-				"link": "http://ilxdh.com/",
-				"icon": "http://ilxdh.com/favicon.ico"
-			},
-			{
-				"name": "北邮人导航",
-				"title": "北邮人常用的导航页，随时随地 Byr.wiki。一个框，全能搜！若打开缓慢，请访问简洁版 http://so.byr.wiki/",
-				"link": "http://byr.wiki/",
-				"icon": "http://byr.wiki/favicon.ico"
-			},
-			{
-				"name": "亿品设计导航",
-				"title": "国内外优秀设计资源网站网址导航",
-				"link": "http://www.epinv.com/hao/",
-				"icon": "http://www.epinv.com/wp-content/themes/ep/favicon.ico"
-			},
-			{
-				"name": "24k导航",
-				"link": "https://www.24kdh.com/",
-				"icon": "https://www.24kdh.com/wp-content/uploads/2020/07/201910021570016173270585-3.ico"
-			}
-		]
-	}]
+    "group_id": "g5",
+    "active_tab": "t1",
+    "group_icon": "el-icon-collection",
+    "group_name": "学习教育",
+    "tabs": [{
+        "tab_index": "t1",
+        "tab_title": "综合",
+        "link_items": [{
+            "name": "国家教育资源公共服务平台",
+            "title": "国家教育资源公共服务平台",
+            "link": "https://eduyun.cn/",
+            "icon": "https://eduyun.cn/favicon.ico"
+        }, {
+            "name": "GeoGebra",
+            "title": "数学教学软件 - 免费的课堂活动数字工具, 用于绘图计算, 几何作图, 白板协作等等",
+            "link": "https://www.geogebra.org/",
+            "icon": "https://www.geogebra.org/favicon.ico"
+        }, {
+            "name": "泛用型播客网页版",
+            "title": "无需注册、注重用户隐私的泛用型播客客户端",
+            "link": "https://www.lingjiangtai.com/",
+            "icon": "https://www.lingjiangtai.com/favicon.ico"
+        }]
+    }, {
+        "tab_index": "t6",
+        "tab_title": "教程",
+        "link_items": [{
+            "name": "廖雪峰的官方网站",
+            "title": "研究互联网产品和技术，提供原创中文精品教程",
+            "link": "https://www.liaoxuefeng.com/",
+            "icon": "https://www.liaoxuefeng.com/favicon.ico"
+        }, {
+            "name": "W3School",
+            "title": "在 W3School，你可以找到你所需要的所有的网站建设教程。从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。",
+            "link": "https://www.w3school.com.cn/",
+            "icon": "https://www.w3school.com.cn/ui2019/logo-32-red.png"
+        }, {
+            "name": "正则表达式",
+            "title": "权威的正则表达式教程",
+            "link": "http://www.regexlab.com/zh/regref.htm",
+            "mark": "new"
+        }, {
+            "name": "正则表达式入门",
+            "title": "简明的正则表达式手册",
+            "link": "https://deerchao.cn/tutorials/regex/regex.htm",
+            "icon": "https://deerchao.cn/images/regex.ico",
+            "mark": "new"
+        }, {
+            "name": "正则表达式全集",
+            "title": "表达式全集|常用正则表达式",
+            "link": "https://tool.oschina.net/uploads/apidocs/jquery/regexp.html",
+            "icon": "https://tool.oschina.net/favicon.ico"
+        }, {
+            "name": "Redis命令参考",
+            "link": "http://doc.redisfans.com/"
+        }, {
+            "name": "Wiki Shileizcc",
+            "title": "各类工具的详细的使用手册，包括Nginx、Redis、Git、MySQL等",
+            "link": "http://wiki.shileizcc.com/",
+            "icon": "http://wiki.shileizcc.com/confluence/s/-7w6ft3/8506/5d4cfda2b837dbf77e088aa916d969d565373c86/46/_/favicon.ico"
+        }, {
+            "name": "开发者手册",
+            "title": "腾讯云开发者手册，提供了 HTML、CSS、JavaScript、Python、Ruby、C、Go 等各种编程语言的基础知识。",
+            "link": "https://cloud.tencent.com/developer/devdocs",
+            "icon": "https://cloud.tencent.com/favicon.ico"
+        }, {
+            "name": "Linux命令大全(手册)",
+            "title": "Linux命令大全(手册) – 真正好用的Linux命令在线查询网站",
+            "link": "https://www.linuxcool.com/",
+            "icon": "https://www.linuxcool.com/wp-content/uploads/2019/03/cropped-redhat-32x32.png"
+        }, {
+            "name": "MDN Web Docs",
+            "title": "MDN Web Docs 是一个提供 Web 技术和促进 Web 技术软件的不断发展的学习平台,来自于包括 Mozilla 基金会内部与外部编辑者的贡献。",
+            "link": "https://developer.mozilla.org/zh-CN/",
+            "icon": "https://developer.mozilla.org/favicon-48x48.97046865.png"
+        }, {
+            "name": "Regex Learn",
+            "title": "Regex Learn - 逐步从零基础到高阶。",
+            "link": "https://regexlearn.com/zh-cn",
+            "icon": "https://regexlearn.com/favicon.svg"
+        }, {
+            "name": "Docker—从入门到实践",
+            "title": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也希望可供理解原理和实现的高级用户参考。",
+            "link": "https://yeasy.gitbook.io/docker_practice/",
+            "icon": "https://app.gitbook.com/public/emojis/1f680.png?v=6.0.0"
+        }, {
+            "name": "PlantUML",
+            "title": "开源工具PlantUML，使用简单的文字描述画UML图。",
+            "link": "https://plantuml.com/zh/",
+            "icon": "https://plantuml.com/favicon.ico"
+        }]
+    }]
 }

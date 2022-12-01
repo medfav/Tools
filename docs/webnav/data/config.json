@@ -1,79 +1,79 @@
 {
-    "config_info":{
-        "type":"config",
-        "source":"eolinker Mock API",
-        "data_link":"https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
-        "create_date":"2021-02-28 15:16:42",
-        "change_date":"2021-02-28 15:16:49",
-        "data_version":"1.0.0"
+    "config_info": {
+        "type": "config",
+        "source": "eolinker Mock API",
+        "data_link": "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
+        "create_date": "2021-03-15 18:45:58",
+        "change_date": "2021-06-07 10:28:14",
+        "data_version": "1.0.1"
     },
     "logo_config": {
         "logo_img": true,
-        "logo_img_url":"http://ilxdh.com/images/new_logo.png",
+        "logo_img_url": "./img/logo.png",
         "logo_text": "网址导航",
-        "data_source": "/data/tabs.json"
+        "data_source": "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/tabs.json"
     },
-    "search":{
-        "default_search":"baidu",
-        "search_list": [
-            {
-                "name": "百度",
-                "id": "baidu",
-                "queryUrl": "https://www.baidu.com/s?wd={}",
-                "icon":"el-icon-search"
-            },
-            {
-                "name": "谷歌",
-                "id": "google",
-                "queryUrl": "http://www.google.com/search?q={}"
-            },
-            {
-                "name": "搜狗",
-                "id": "sogou",
-                "queryUrl": "https://www.sogou.com/web?query={}"
-            },
-            {
-                "name": "必应",
-                "id": "bing",
-                "queryUrl": "https://cn.bing.com/search?q={}"
-            },
-            {
-                "name": "京东",
-                "id": "jd",
-                "queryUrl": "http://search.jd.com/Search?enc=utf-8&keyword={}"
-            },
-            {
-                "name": "微信",
-                "id": "weixin",
-                "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8"
-                },
-            {
-                "name": "知乎",
-                "id": "zhihu",
-                "queryUrl": "https://www.zhihu.com/search?q={}"
-            },
-            {
-                "name": "微博",
-                "id": "weibo",
-                "queryUrl": "http://s.weibo.com/weibo/{}"
-            },
-            {
-                "name": "B站",
-                "id": "bilibili",
-                "queryUrl": "https://search.bilibili.com/all?keyword={}"
-            },
-            {
-                "name": "百度",
-                "id": "baiduditu",
-                "queryUrl": "https://map.baidu.com/search/{}?querytype=s&wd={}",
-                "icon":"el-icon-map-location"
-            },
-            {
-                "name": "高德",
-                "id": "gaodeditu",
-                "queryUrl": "http://ditu.amap.com/search?query={}",
-                "icon":"el-icon-map-location"
-            }
+    "other_config": {
+        "set_gray": "set-gray",
+        "keywords": [
+            "QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", 
+            "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="
         ]
+    },
+    "copyright": {
+        "dates": "2020-2023",
+        "domain": "www.medfav.com",
+        "author_or_owner": "蓝天之约" 
+    },
+    "search": {
+        "default_search": "baidu",
+        "search_list": [{
+            "name": "百度",
+            "id": "baidu",
+            "queryUrl": "https://www.baidu.com/s?wd={}",
+            "icon": "el-icon-search"
+        }, {
+            "name": "谷歌",
+            "id": "google",
+            "queryUrl": "http://google.fuckcloudnative.io/search?q={}"
+        }, {
+            "name": "必应",
+            "id": "bing",
+            "queryUrl": "https://cn.bing.com/search?q={}"
+        }, {
+            "name": "豆瓣",
+            "id": "douban",
+            "queryUrl": "https://www.douban.com/search?q={}"
+        }, {
+            "name": "解析",
+            "id": "vipjx",
+            "queryUrl": "/video/?url={}"
+        }, {
+            "name": "知乎",
+            "id": "zhihu",
+            "queryUrl": "https://www.zhihu.com/search?q={}"
+        }, {
+            "name": "微博",
+            "id": "weibo",
+            "queryUrl": "http://s.weibo.com/weibo/{}"
+        }, {
+            "name": "B站",
+            "id": "bilibili",
+            "queryUrl": "https://search.bilibili.com/all?keyword={}"
+        }, {
+            "name": "京东",
+            "id": "jd",
+            "queryUrl": "http://search.jd.com/Search?enc=utf-8&keyword={}"
+        }, {
+            "name": "百度",
+            "id": "baiduditu",
+            "queryUrl": "https://map.baidu.com/search/{}?querytype=s&wd={}",
+            "icon": "el-icon-map-location"
+        }, {
+            "name": "高德",
+            "id": "gaodeditu",
+            "queryUrl": "http://ditu.amap.com/search?query={}",
+            "icon": "el-icon-map-location"
+        }]
     }
 }
