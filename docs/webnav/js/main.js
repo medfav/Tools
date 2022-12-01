@@ -140,7 +140,15 @@ var Main = {
             this.config.logo_text = config.logo_config.logo_text;
             // this.config.data_source = config.data_source;
             this.config.search_config = config.search.search_list;
-            this.config.default_search = config.search.default_search
+            this.config.default_search = config.search.default_search;
+            // 设置灰色
+            this.other_config.set_gray = config.other_config.set_gray;
+            // 默认关键词
+            this.other_config.keywords = this.decodeText(config.other_config.keywords);
+            // 版权信息
+            this.copyright.dates = config.copyright.dates;
+            this.copyright.domain = config.copyright.domain;
+            this.copyright.author_or_owner = config.copyright.author_or_owner;
           });
         },
         // 获取页面框架信息
@@ -174,13 +182,15 @@ var Main = {
               // tab_groups[1].tabs = res_data.tabs;
             });
           })
+        },
+        decodeText: function(keywords){
+          // 解码
+          return keywords.map(item => {
+            return decodeURI(window.atob(item));
+          });
         }
     },
     mounted: function() {
-      // 解码
-      this.other_config.keywords = this.other_config.keywords.map(item => {
-        return decodeURI(window.atob(item));
-      })
       // axios.get("/data/data.json")
       // .then(response => {
       //   this.tab_items = response.data;

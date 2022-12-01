@@ -4,8 +4,8 @@
         "source": "eolinker Mock API",
         "data_link": "https://mockapi.eolinker.com/wMcT8EC5b9622df7c09ace9bd4ad3cde87932fd5b8344a4/data/config.json",
         "create_date": "2021-03-15 18:45:58",
-        "change_date": "2021-06-07 10:28:14",
-        "data_version": "1.0.1"
+        "change_date": "2022-12-02 00:19:06",
+        "data_version": "1.0.2"
     },
     "logo_config": {
         "logo_img": true,
