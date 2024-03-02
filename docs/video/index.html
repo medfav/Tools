@@ -73,6 +73,7 @@
                         this.playUrl = "./readme.html"
                     }else{
                         this.playUrl = this.select + this.input;
+                        sessionStorage.setItem("videoUrl", this.input);
                     }
                 }
             },
@@ -97,6 +98,9 @@
                                     _this.play();
                                 }
                             })
+                        } else {
+                            _this.input = sessionStorage.getItem("videoUrl");
+                            _this.iputChange();
                         }
                     }
                 });
