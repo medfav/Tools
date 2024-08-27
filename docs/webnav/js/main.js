@@ -39,7 +39,7 @@ var Main = {
               keywords: ["QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="]
             },
             copyright: {
-              dates: "2020-2023",
+              dates: "2020-2024",
               domain: "www.medfav.com",
               author_or_owner: "蓝天之约" 
             },
