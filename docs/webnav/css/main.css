@@ -16,6 +16,12 @@ html,body,div,p,span {
     border: 0;
     outline: 0;
 }
+/* Firefox 滚动条宽度 */
+@-moz-document url-prefix() {
+    html {
+        scrollbar-width: thin;
+    }
+}
 /* 滚动条样式 开始 */
 /* html{
     overflow: hidden;
@@ -190,13 +196,13 @@ main.el-main{
 div.link-content > div {
     color: #6d6d6d;
     display: inline-flex;
-    padding: 5px 1px;
+    padding: 5px 0px;
     margin: 2px;
     margin-right: 10px;
     margin-bottom: 7px;
     width: 12.717%;
     min-width: 120px;
-    max-width: 143px;
+    max-width: 144px;
     height: 22px;
     line-height: 22px;
     /* text-align: center; */
