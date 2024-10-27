@@ -38,7 +38,8 @@ $(window).resize(function() {
 })(jQuery);
 
 function timeElapse(date){
-	var current = new Date(2024,08,27,18,26,00).toString();//时间定格
+	//var current = new Date(2024,08,27,18,26,00).toString();//时间定格
+	var current = new Date(2024,10,27,16,56,00).toString();//时间定格
 	//var current = Date();//当前时间
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
 	var days = Math.floor(seconds / (3600 * 24));
