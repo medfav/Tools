@@ -62,11 +62,11 @@
                                 {{load_info}}
                             </div>
                             <div id="tab-title" class="tab-title" v-show="tab_groups!='undifine'&&tab_groups.length > 0" style="display: none;">
-                                <el-tabs :value="group.group_id + group.active_tab" v-for="(group,index) in tab_groups" :key="index" type="border-card" @tab-click="handleClick">
+                                <el-tabs :value="group.active_tab" v-for="(group,index) in tab_groups" :key="index" type="border-card" @tab-click="handleClick">
                                     <el-tab-pane disabled>
                                         <span class="group-title-icon" slot="label"><i :class="group.group_icon"></i>{{group.group_name}}</span>
                                     </el-tab-pane>
-                                    <el-tab-pane :label="tab.tab_title" :name="group.group_id + tab.tab_index" v-for="(tab,index) in group.tabs" :key="index" lazy>
+                                    <el-tab-pane :label="tab.tab_title" :name="'t' + (index + 1)" v-for="(tab,index) in group.tabs" :key="index" lazy>
                                         <div class="link-content" v-if="tab.link_items.length>0">
                                             <div v-for="(item, index) in tab.link_items" >
                                                 <el-badge v-if="item.mark=='new'||item.mark=='hot'" :value="item.mark">
@@ -105,7 +105,7 @@
             <el-row class="footbar">
                 <el-col :xs="1" :sm="1"  :md="2" :lg="3" :xl="4"></el-col>
                 <el-col :xs="22" :sm="22" :md="20" :lg="18" :xl="16">
-                    <p>Copyright &copy; {{copyright.dates}} <a href="./">{{copyright.domain}}</a> {{copyright.author_or_owner}} 保留所有权利</p>
+                    <p>Copyright &copy; {{copyright.dates}} <a :href="'https://' + copyright.domain + '/'">{{copyright.domain}}</a> {{copyright.author_or_owner}} 保留所有权利</p>
                     <p>数据更新日期：<span>{{source_info.change_date}}</span></p>
                 </el-col>
                 <el-col :xs="1" :sm="1"  :md="2" :lg="3" :xl="4"></el-col>

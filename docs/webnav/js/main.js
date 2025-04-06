@@ -48,7 +48,7 @@ var Main = {
     },
     watch: {
       tab_groups: function() {
-        this.getGroupData(this.tab_groups);
+        // this.getGroupData(this.tab_groups);
       }
     },
     methods: {
@@ -164,21 +164,36 @@ var Main = {
             this.source_info = res_data.source_info;
             console.log("导航数据版本：" + res_data.source_info.data_version + ", 更新日期：" + res_data.source_info.change_date);
             this.tab_groups = res_data.nav_data;
+            this.getGroupData(this.tab_groups);
           });
         },
         // 根据框架数据，获取分组数据
         getGroupData: function(tab_groups) {
-          tab_groups.forEach(group=>{
-            axios.get(group.data_url)
+          tab_groups.forEach((group, index)=>{
+            axios.get(group.data_url, {
+              params: {
+                idx: index + 1
+              }
+            })
             .then(response => {
               if(!this.isJSON(response.data)){
                   console.log("数据文件错误!");
                   this.load_info = "数据文件错误!";
                   return;
               }
+              console.log(response.config.params);
               let res_data = typeof response.data == "string"?JSON.parse(response.data):response.data;
-              let group = tab_groups.find(group => group.group_id == res_data.group_id);
-              group.tabs = res_data.tabs;
+              // let group = tab_groups.find(group => group.group_id == res_data.group_id);
+              // group.tabs = res_data.tabs;
+              for (i = 0; i < tab_groups.length; i++) {
+                if (tab_groups[i].group_id == res_data.group_id) {
+                  // tab_groups[i] = res_data;
+                  // 改变数组元素，直接通过下标修改不会被监听
+                  this.$set(tab_groups, i, res_data);
+                }
+                
+              }
+              this.tab_groups;
               // tab_groups[1].tabs = res_data.tabs;
             });
           })
