@@ -15,10 +15,10 @@
     },
     "other_config": {
         "set_gray": "set-gray",
-        "keywords": [
-            "NjQ5N2Y4Y2ViYTczY2ZmZjM0NDA5Y2M5YzRjYjdhYjM=", 
-            "ODliMmM2MTA4MzQ5NzFhZTcyMWU2ZGIyYjczZjEyM2M="
-        ]
+        "keywords": {
+            "words": ["NjQ5N2Y4Y2ViYTczY2ZmZjM0NDA5Y2M5YzRjYjdhYjM=", "ODliMmM2MTA4MzQ5NzFhZTcyMWU2ZGIyYjczZjEyM2M="],
+            "target": ["../mg", "../mg"]
+        }
     },
     "copyright": {
         "dates": "2020-2023",

@@ -36,7 +36,10 @@ var Main = {
             other_config: {
               // 值为set-gray时，全页面置为黑白
               set_gray: "set-gray",
-              keywords: ["QCVFNyU5NCVCMCVFNiVBMiVBNiVFNiVBRCU4Qw==", "QCVFNSU5MCVCNCVFNSVBRCU5MCVFNSVCOSVCOA=="]
+              keywords: {
+                words: ["NjQ5N2Y4Y2ViYTczY2ZmZjM0NDA5Y2M5YzRjYjdhYjM=", "ODliMmM2MTA4MzQ5NzFhZTcyMWU2ZGIyYjczZjEyM2M="],
+                target: ["../mg", "../mg"]
+              }
             },
             copyright: {
               dates: "2020-2024",
@@ -84,8 +87,13 @@ var Main = {
       searchButton:function(search_engines) {
           // document.querySelector(".el-autocomplete .el-input input").value;
           console.log(this.searchbox_value);
-          if(this.searchbox_value == this.other_config.keywords[0] || this.searchbox_value == this.other_config.keywords[1]) {
-            window.open("../mg");
+          if ( this.searchbox_value.charAt(0) === "@") {
+          // if( == this.other_config.keywords[0] || this.searchbox_value == this.other_config.keywords[1]) {
+            let index = this.other_config.keywords.words.indexOf(md5(this.searchbox_value.slice(1)))
+            if (index >= 0){
+              window.open(this.other_config.keywords.target[index]);
+              return
+            }
           }
           let searchurl = "";
           this.config.search_config.forEach((item)=>{
@@ -200,9 +208,10 @@ var Main = {
         },
         decodeText: function(keywords){
           // 解码
-          return keywords.map(item => {
-            return decodeURI(window.atob(item));
+          keywords.words = keywords.words.map(item => {
+            return window.atob(item);
           });
+          return keywords;
         }
     },
     mounted: function() {
